@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="/mtcStatis/images/logo.png">
+	<link href="/mtcStatis/common/bootstrap/css/bootstrap.min.css" title="" rel="stylesheet">
+	<link title="" href="/mtcStatis/css/common.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/common/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<input type="hidden" id='parentHref' data-index='3'>
+	<div class="down-main">
+		<div class="right-product my-index right-full">
+			<div class="container-fluid">
+				<div class="info-center">
+					<div class="right">
+						<!--面包屑导航-->
+						<div class="breadcrumb">
+							<a href="javascript:;">远程会诊</a><em>/</em>
+							<span>我的申请</span> 
+						</div>
+					</div>
+					<div class="tab">
+						<ul class="tabs clearfix border_box">
+							<li name='tab1' class='current'>待办事项</li>
+							<li name='tab2'>我的申请</li>
+						</ul>
+						<div class="tab_content">
+							<div class="tab1 current">
+								<div class="search-box clearfix border_box padding_20">
+									<div class="apply-id">
+										申请编号：
+										<input type="text" name="">
+									</div>
+									<div class="patient-name">
+										患者姓名：
+										<input type="text" name="">
+									</div>
+									<div class="identity-num">
+										证件号码：
+										<input type="text" name="">
+									</div>
+									<div class="status">
+										状态：
+										<select>
+											<option value="">全部</option>
+											<option value="0">暂存</option>
+											<option value="11">已拒绝</option>
+											<option value="60">待下载</option>
+										</select>
+									</div>
+									<div class="start-date">
+										起始时间：
+										<input type="text" readonly class="input-date">
+									</div>
+									<div class="end-date">
+										结束时间：
+										<input type="text" readonly class="input-date">
+									</div>
+									<div class="button-box">
+										<a class="button button-green tab1-search">查询</a>
+										<a class="button button-orange reset">重置</a>
+									</div>
+								</div>
+								<div class="table-box backlog-box border_box padding_20">
+									<table class="table table-hover table-bordered">
+										<thead>
+											<tr>
+												<th>申请编号</th>
+												<th>患者姓名</th>
+												<th>性别</th>
+												<th>联系电话</th>
+												<th>证件号码</th>
+												<th>会诊类型</th>
+												<th>申请日期</th>
+												<th>期望会诊时间</th>
+												<th>状态</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody></tbody>
+									</table>
+									<div class="noData padding_20">
+										暂时还没有数据
+									</div>
+									<div class="list-pagination clearfix">
+										<div class="pull-right page"></div>
+									</div>
+								</div>
+							</div>
+							<div class="tab2">
+								<div class="search-box clearfix border_box padding_20">
+									<div class="apply-id">
+										申请编号：
+										<input type="text" name="">
+									</div>
+									<div class="patient-name">
+										患者姓名：
+										<input type="text" name="">
+									</div>
+									<div class="identity-num">
+										证件号码：
+										<input type="text" name="">
+									</div>
+									<div class="status">
+										状态：
+										<select data-value='12345'>
+											<option value ="12345">全部</option>
+											<option value ="0">暂存</option>
+											<option value ="-10">撤销</option>
+											<option value ="10">待审核</option>
+											<option value ="11">已拒绝</option>
+											<option value ="20">待分诊</option>
+											<option value ="30">待会诊</option>
+											<option value ="40">会诊中</option>
+											<option value ="50">报告中</option>
+											<option value ="60">待下载</option>
+											<option value ="70">已完成</option>
+										</select>
+									</div>
+									<div class="start-date">
+										起始时间：
+										<input type="text" readonly class="input-date">
+									</div>
+									<div class="end-date">
+										结束时间：
+										<input type="text" readonly class="input-date">
+									</div>
+									<div class="button-box">
+										<a class="button button-green tab2-search">查询</a>
+										<a class="button button-orange reset">重置</a>
+									</div>
+								</div>
+								<div class="table-box myApply-box border_box padding_20">
+									<table class="table table-hover table-bordered">
+										<thead>
+											<tr>
+												<th>申请编号</th>
+												<th>患者姓名</th>
+												<th>性别</th>
+												<th>联系电话</th>
+												<th>证件号码</th>
+												<th>会诊类型</th>
+												<th>申请日期</th>
+												<th>期望会诊时间</th>
+												<th>状态</th>
+												<th>操作</th>
+											</tr>
+										</thead>
+										<tbody></tbody>
+									</table>
+									<div class="noData padding_20">
+										暂时还没有数据
+									</div>
+									<div class="list-pagination clearfix">
+										<div class="pull-right page"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/mtcStatis/common/js/jquery-3.2.1.min.js"></script>
+	<script src="/mtcStatis/common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/paging.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/mtcStatis/js/common.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/consultation/myApply.js"></script>
+</body>
+</html>

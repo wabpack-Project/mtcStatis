@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="./images/logo.png">
+	<link rel="stylesheet" type="text/css" href="/mtcStatis/css/login.css">
+</head>
+<body>
+	<div class="logo-image">
+		<img src="/mtcStatis/images/logo_login.png">
+	</div>
+	<div class="login-box">
+		<div class="hello-text">
+			欢迎登录
+		</div>
+		<div class="errorText"></div>
+		<form id="loginform" action="/gohealth-plat/login" method="post" onsubmit="return checkLogin()">
+			<div class="input-box">
+				<div class="user-name">
+					<span class="input-icon name-icon"></span>
+					<input type="text" name="">
+				</div>
+				<div class="user-password">
+					<span class="input-icon password-icon"></span>
+					<input type="password" name="">
+				</div>
+				<div class="login-auto">
+					<label>
+						<input type="checkbox" name="" class="default">
+						自动登录
+					</label>
+				</div>
+			</div>
+			<button class="login-button">登录</button>
+		</form>
+	</div>
+	<p class="systemText">MEDICAL SYSTEM</p>
+	<script src="./common/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/login.js"></script>
+</body>
+</html>

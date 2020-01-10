@@ -1,0 +1,65 @@
+.base-change .change-box,.medical-info .medical-box{
+	height: 160px;
+	overflow: hidden;
+}
+.insurance-num s.emphasis{
+	display: none;
+}
+.hospital-apply span,.reception-hospital span{
+	display: inline-block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+.reception-hospital span{
+	display: none;
+}
+.medical-box .multiple-box{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	padding: 0 10px;
+}
+.medical-box .multiple-box{
+	height: 30px;
+	cursor: pointer;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.medical-box .multiple-box::-webkit-scrollbar{
+	height: 4px;
+	background: #eaeaea;
+}
+.medical-box .multiple-box::-webkit-scrollbar-thumb{
+	background: #22B394;
+	border-radius: 2px;
+}
+.medical-box .multiple-item{
+	display: inline-block;
+	position: relative;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	margin: 0 10px;
+	padding: 0 10px;
+	line-height: normal;
+	font-size: 12px;
+}
+.medical-box .multiple-item .delete{
+	position: absolute;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	line-height: 10px;
+	text-align: center;
+	border-radius: 50%;
+	background: #a4a4a4;
+	color: #fff;
+	text-decoration: none;
+	top: -6px;
+	right: -6px;
+	z-index: 1;
+}

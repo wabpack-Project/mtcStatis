@@ -1,0 +1,16 @@
+.statistics-box>div{
+	float: left;
+	width: 32%;
+}
+.statistics-box>div:not(:last-child){
+	margin-right: 2%;
+}
+.statistics-box .total-info,.statistics-box .item-info{
+	line-height: 30px;
+	margin-top: 20px;
+}
+@media screen and (max-width: 1366px) {
+	.statistics-box .total-info,.statistics-box .item-info{
+		margin-top: 10px;
+	}
+}

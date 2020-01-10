@@ -1,0 +1,276 @@
+.hospital-join>div{
+	float: right;
+	margin: 0 10px;
+	line-height: 20px;
+}
+.statis-total,.apply-total,.transfer-traffic,.traffic-list,.hospital-traffic-wrap,.traffic-wrap .proportion-bar-wrap>div,.consul-traffic,.traffic-echart-wrap,.outpatient-echart-wrap,.footer{
+	margin-top: 20px;
+}
+.register-total>div,.transfer-traffic>div,.consul-traffic>div{
+	float: left;
+	width: 32%;
+}
+.register-total>div:not(:last-child),.apply-total>div:not(:last-child),.transfer-traffic>div:not(:last-child),.hospital-traffic-wrap>div:not(:last-child),.consul-traffic>div:not(:last-child){
+	margin-right: 2%;
+}
+.register-total>div>div{
+	float: left;
+	width: 50%;
+}
+.register-total .info-icon,.register-total .total-info{
+	height: 100px;
+}
+.register-total .info-icon{
+	background-color: #f4f4f5;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.register-total .department-icon{
+	background-image: url('/mtcStatis/images/u14.png');
+}
+.register-total .room-icon{
+	background-image: url('/mtcStatis/images/u15.png');
+}
+.register-total .doctor-icon{
+	background-image: url('/mtcStatis/images/u16.png');
+}
+.register-total .total-info{
+	padding-top: 20px;
+}
+.register-total .info-title{
+	color: #999999;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.register-total .total-num{
+    text-align: center;
+	font-size: 20px;
+    color: #ff9a00;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.apply-total>div{
+	float: left;
+	width: 15%;
+	height: 150px;
+}
+.apply-total .total-info{
+	border-bottom: 1px solid #eaeaea;
+}
+.apply-total .total-info .total-num{
+	float: right;
+}
+.apply-total .item-box .total-item{
+	float: left;
+	width: 50%;
+	padding-top: 20px;
+}
+.apply-total .outpatient-registration-total .total-item,.apply-total .outpatient-reception-total .total-item{
+	width: 33.3%;
+}
+.apply-total .item-box .total-item:not(:last-child){
+	border-right: 1px solid #eaeaea;
+}
+.apply-total .item-box .total-item>p{
+	text-align: center;
+}
+.apply-total .item-box .total-item .item-num{
+	margin-top: 20px;
+}
+.transfer-traffic>div,.consul-traffic>div,.traffic-echart-wrap>div,.outpatient-echart-wrap>div{
+	height: 340px;
+}
+.transfer-traffic .transfer-wrap,.consul-traffic .consul-wrap,.traffic-echart-wrap .echart-wrap,.outpatient-echart-wrap .outpatient-wrap{
+	height: 296px;
+}
+.traffic-list li{
+	list-style: none;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.traffic-list .rank_num{
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    float: left;
+}
+.traffic-list .rank_num i{
+	position: absolute;
+    top: 2px;
+    left: 5px;
+    color: white;
+}
+.traffic-list li>span:nth-child(2) {
+    float: left;
+    max-width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.traffic-list .info-count{
+	width: 50%;
+}
+.traffic-list .info-count span{
+	display: inline-block;
+	width: 30%;
+}
+.traffic-list .info-count span em{
+	color: #999;
+}
+.hospital-traffic-wrap>div{
+	float: left;
+	width: 49%;
+}
+.hospital-traffic-wrap>div>div{
+	float: left;
+}
+.traffic-wrap .proportion-bar-wrap{
+	width: 60%;
+	border-right: 1px solid #eaeaea;
+}
+.traffic-wrap .proportion-pie-wrap{
+	width: 40%;
+}
+.traffic-wrap .proportion-bar-wrap>div>div{
+	float: left;
+	width: 50%;
+}
+.traffic-wrap .proportion-bar-wrap .sick_process:not(:last-child){
+	margin-bottom: 10px;
+}
+.proportion-bar-wrap .ellipsis{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 60%;
+    display: inline-block;
+}
+.proportion-bar-wrap .process>span{
+	float: right;
+}
+.proportion-bar-wrap .process_box{
+    background-color: #f4f4f5;
+    height: 12px;
+    border-radius: 5px;
+    position: relative;
+}
+.proportion-bar-wrap .process_box div{
+	height: 12px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hospital-traffic-wrap .hospital-pie{
+	height: 186px;
+}
+.traffic-echart-wrap>div{
+	float: left;
+}
+.traffic-echart-wrap .width_16{
+	width: 16%;
+}
+.traffic-echart-wrap .width_26{
+	width: 26%;
+}
+.traffic-echart-wrap>div:not(:last-child){
+	border-right: 1px solid #eaeaea;
+}
+.outpatient-echart-wrap>div{
+	float: left;
+}
+.outpatient-echart-wrap .outpatient-traffic{
+	width: 32%;
+	margin-right: 2%;
+}
+.outpatient-echart-wrap .outpatient-hospital-traffic-wrap{
+	width: 66%;
+}
+.outpatient-hospital-traffic-wrap>div{
+	float: left;
+	width: 33.3%;
+}
+.outpatient-hospital-traffic-wrap>div:not(:last-child){
+	border-right: 1px solid #eaeaea;
+}
+.footer .star{
+	float: left;
+	width: 19%;
+	height: 160px;
+}
+.footer .star:not(:last-child){
+	margin-right: 1.25%;
+}
+.star_content {
+    margin: 18px 0 0 30px;
+}
+.star_content img {
+    margin-right: 20px;
+    max-width: 30%;
+}
+.doctor_star {
+    font-size: 16px;
+    font-weight: bold;
+}
+.gray_color, .gray_color span {
+    font-size: 14px;
+    color: #666;
+}
+@media screen and (max-width: 1366px) {
+	.statis-total,.register-total .total-num,.apply-total,.apply-total .item-box .total-item .item-num,.transfer-traffic,.traffic-list,.hospital-traffic-wrap,.traffic-wrap .proportion-bar-wrap>div,.consul-traffic,.traffic-echart-wrap,.outpatient-echart-wrap,.footer{
+		margin-top: 10px;
+	}
+	.register-total .info-icon,.register-total .total-info{
+		height: 70px;
+	}
+	.register-total .total-info,.apply-total .item-box .total-item{
+		padding-top: 10px;
+	}
+	.apply-total>div{
+		height: 110px;
+	}
+	.transfer-traffic>div,.consul-traffic>div,.traffic-echart-wrap>div,.outpatient-echart-wrap>div{
+		height: 240px;
+	}
+	.transfer-traffic .transfer-wrap,.consul-traffic .consul-wrap,.traffic-echart-wrap .echart-wrap,.outpatient-echart-wrap .outpatient-wrap{
+		height: 196px;
+	}
+	.traffic-list li{
+		height: 22px;
+    	line-height: 22px;
+	}
+	.traffic-list .rank_num{
+		margin-right: 10px;
+	}
+	.traffic-list .rank_num img{
+		max-height: 18px;
+	}
+	.traffic-list .rank_num i{
+		left: 4px;
+    	font-size: 14px;
+	}
+	.hospital-traffic-wrap .hospital-pie{
+		height: 176px;
+	}
+	.footer .star{
+		height: 114px;
+	}
+	.star_content img {
+	    margin-right: 10px;
+	    width: 54px;
+	}
+	.doctor_star {
+	    font-size: 14px;
+	}
+	.gray_color, .gray_color span {
+	    font-size: 12px;
+	}
+}

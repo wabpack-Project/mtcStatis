@@ -1,0 +1,22 @@
+.change-box>.patient-name input{
+	width: 88%;
+	float: left;
+}
+.change-box>.patient-name .choicePatient{
+	float: left;
+	width: 12%;
+	height: 28px;
+	border: 1px solid #eaeaea;
+	border-left: none;
+	background: url('/mtcStatis/images/user.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+	cursor: pointer;
+}
+.hospital-apply>span{
+	display: inline-block;
+	width: 100%;
+	height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+}

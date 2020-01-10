@@ -1,0 +1,17 @@
+.tab>.information-box{
+	float: left;
+	width: 75%;
+	margin-right: 1%;
+}
+.tab>.status-box{
+	float: left;
+	width: 24%;
+}
+.desMtc-box table{
+	margin-top: 20px;
+}
+@media screen and (max-width: 1366px) {
+	.desMtc-box table{
+		margin-top: 10px;
+	}
+}

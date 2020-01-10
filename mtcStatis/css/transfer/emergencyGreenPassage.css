@@ -1,0 +1,16 @@
+.base-change .change-box{
+	height: auto;
+}
+.medical-box,.medical-information{
+	margin-top: 20px;
+}
+.consul-change>div p{
+	height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+@media screen and (max-width: 1366px) {
+	.medical-box,.medical-information{
+		margin-top: 10px;
+	}
+}

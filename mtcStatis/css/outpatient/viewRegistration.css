@@ -1,0 +1,78 @@
+.outpatient-box .item-box{
+	float: left;
+	width: 32%;
+}
+.outpatient-box .item-box:not(:last-child){
+	margin-right: 2%;
+}
+.outpatient-box .item-box>div{
+	float: left;
+}
+.outpatient-box .item-box .item-icon{
+	width: 30%;
+	height: 100px;
+	background-size: 100%;
+}
+.outpatient-box .item-box .patient-icon{
+	background-image: url('/mtcStatis/images/3.4.png');
+}
+.outpatient-box .item-box .attendance-icon{
+	background-image: url('/mtcStatis/images/3.5.png');
+}
+.outpatient-box .item-box .outcall-icon{
+	background-image: url('/mtcStatis/images/3.3.png');
+}
+.outpatient-box .item-box .item-info{
+	width: 67%;
+	margin-left: 3%;
+}
+.outpatient-box .outcall-state .waiting{
+	color: #F4ad5b;
+}
+.outpatient-box .outcall-state .outcall{
+	color: #3bb493;
+}
+.medical-box{
+	margin-top: 20px;
+}
+.medical-box .base-info>div:not(.medical-enclosure){
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.medical-box .medical-enclosure .enclosure-box{
+	display: inline-block;
+}
+.medical-box .medical-enclosure .enclosure-box a{
+	margin: 0 5px;
+}
+.medical-box .medical-enclosure .enclosure-box a,.medical-box .medical-enclosure .enclosure-box a:hover,.medical-box .medical-enclosure .enclosure-box a:focus{
+	color:#3bb493;
+}
+.outpatient-apply-inventory{
+	margin-top: 20px;
+}
+.outpatient-apply-inventory .inventory-title{
+	border-bottom: 1px solid #f4f4f5;
+}
+.outpatient-apply-inventory .inventory-title h2{
+	text-align: center;
+    margin: 30px 0;
+}
+.outpatient-apply-inventory .outpatient-info>div{
+	padding-left: 15px;
+	line-height: 30px;
+}
+.outpatient-apply-inventory .doctor-info{
+	text-align: right;
+	line-height: 22px;
+}
+@media screen and (max-width: 1366px){
+	.medical-box,.outpatient-apply-inventory{
+		margin-top: 10px;
+	}
+}

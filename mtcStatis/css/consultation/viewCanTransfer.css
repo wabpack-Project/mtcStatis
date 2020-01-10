@@ -1,0 +1,20 @@
+.tab>.information-box{
+	float: left;
+	width: 75%;
+	margin-right: 1%;
+}
+.tab>.status-box{
+	float: left;
+	width: 24%;
+}
+.triage-box .desMtc-box select{
+	width: 30%;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.tab>.button-box .button.pass,.tab>.button-box .button.refuse{
+	display: inline;
+}

@@ -1,0 +1,77 @@
+.tab>.information-box{
+	float: left;
+	width: 75%;
+	margin-right: 1%;
+}
+.tabs li[name='tab3'],.tabs li[name='tab4'],.tabs li[name='tab5']{
+	display: none;
+}
+.tab>.status-box{
+	float: left;
+	width: 24%;
+}
+.report-info .doctor-list>li{
+	float: left;
+	margin-right: 15px;
+}
+.report-info .consul-report{
+	padding: 30px;
+	background: #ECECEE;
+}
+.report-info .report-title{
+	border-bottom: 1px solid #f4f4f5;
+}
+.report-title h2{
+	text-align: center;
+	margin: 30px 0;
+}
+.report-info .icd-10,.report-info .diagnose-desc,.report-info .cure-opinion{
+	padding: 30px 25px;
+	border-bottom: 1px solid #f4f4f5;
+}
+.report-info .icd-10>div{
+	display: inline-block;
+	width: 80%;
+	vertical-align: text-top;
+}
+.report-info .report-doctor-info{
+	text-align: right;
+}
+.estimate-info .estimate-title{
+	border-bottom: 1px solid #f4f4f5;
+}
+.estimate-info .estimate-title b{
+	margin-left: 15px;
+}
+.estimate-info .estimate-item{
+	margin-left: 15px;
+}
+.estimate-item .item-title,.estimate-item .item-answer{
+	margin: 20px 0;
+}
+.estimate-item .item-answer label{
+	margin-right: 15px;
+}
+.estimate-item .item-answer textarea{
+	width: 100%;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	padding: 0 10px;
+}
+.estimate-item .item-answer textarea:focus{
+	border-color: #BAE8DE;
+}
+.system-estimate{
+	margin: 20px 0;
+}
+.tab>.button-box .button:not(.back){
+	display: none;
+}
+@media screen and (max-width: 1366px) {
+	.report-info,.estimate-item .item-title,.estimate-item .item-answer,.system-estimate{
+		margin: 10px 0;
+	}
+	.report-info .icd-10,.report-info .diagnose-desc,.report-info .cure-opinion{
+		padding: 30px 35px;
+	}
+}

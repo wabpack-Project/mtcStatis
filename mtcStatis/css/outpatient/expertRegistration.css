@@ -1,0 +1,56 @@
+.expert-box{
+	margin-top: 20px;
+}
+.expert-wrap{
+	position: relative;
+	padding: 0 36px;
+}
+.left-right span{
+	top: 48%;
+}
+.expert-wrap .expert-list{
+	position: relative;
+	overflow: hidden;
+}
+.expert-wrap .expert-list ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	white-space: nowrap;
+}
+.expert-wrap .expert-list ul li{
+	display: inline-block;
+	border: 1px solid #eaeaea;
+	background: #F0F0F0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.expert-wrap ul li.expert-selected{
+	border: 1px solid #21AA8D;
+	background: #D6F0E9;
+}
+.expert-wrap .expert-item .expert-icon{
+	float: left;
+	width: 40%;
+	height: 140px;
+	background: url('/mtcStatis/images/82.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.expert-wrap .expert-item.expert-selected .expert-icon{
+	background-image: url('/mtcStatis/images/81.png');
+}
+.expert-wrap .expert-item .expert-info{
+	float: left;
+	width: 55%;
+	margin-left: 5%;
+}
+.expert-wrap .expert-item .expert-info>div{
+	margin: 5px 0;
+	white-space: normal;
+}
+@media screen and (max-width: 1366px) {
+	.expert-box{
+		margin-top: 10px;
+	}
+}

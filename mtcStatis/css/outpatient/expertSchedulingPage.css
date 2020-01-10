@@ -1,0 +1,58 @@
+.scheduling-doctor-box>div{
+	display: none;
+}
+.scheduling-doctor-box .doctor-container {
+    margin-top: 0;
+}
+.expert-bar,.scheduling-doctor-box .outpatient-container,.scheduling-doctor-box .timeperiod-container{
+	margin-top: 20px;
+}
+.outpatient-container>div{
+	margin: 5px 0;
+}
+.outpatient-container input{
+	width: 200px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.outpatient-container input:focus{
+	border: 1px solid #BAE8DE;
+}
+.outpatient-container .outpatient-cost label,.outpatient-container .outpatient-duration label{
+	position: relative;
+}
+.outpatient-container .outpatient-cost input{
+	padding-right: 20px;
+}
+.outpatient-container .outpatient-duration input{
+	padding-right: 40px;
+}
+.outpatient-container .outpatient-cost s,.outpatient-container .outpatient-duration s{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	text-decoration: none;
+}
+.timeperiod-container>div{
+	margin: 10px 0;
+}
+.timeperiod-container .time-period input{
+	width: 134px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.timeperiod-container .time-period input:focus{
+	border-bottom: 1px solid #BAE8DE;
+}
+@media screen and (max-width: 1366px) {
+	.expert-bar,.scheduling-doctor-box .outpatient-container,.scheduling-doctor-box .timeperiod-container{
+		margin-top: 10px;
+	}
+}

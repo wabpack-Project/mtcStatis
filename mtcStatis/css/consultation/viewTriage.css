@@ -1,0 +1,46 @@
+.triage-box>div{
+	float: left;
+	width: 50%;
+}
+.triage-box .wish-doctor div{
+	display: inline-block;
+	width: 80%;
+}
+.reality-consul .reality-doctor{
+	float: initial;
+}
+.reality-consul .reality-time input{
+	width: 40%;
+	height: 28px;
+    line-height: 28px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.reality-consul .reality-doctor table,.doctor-selected .select-table{
+	margin-top: 20px;
+}
+.reality-consul .reality-doctor table textarea{
+	max-width: 100px;
+}
+.doctor-selected{
+	height: 200px;
+	overflow: auto;
+}
+.doctor-selected .cleanall{
+	line-height: normal;
+}
+.doctor-selected .select-table{
+	position: relative;
+}
+.doctor-selected .select-table .select-head{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+@media screen and (max-width: 1366px) {
+	.reality-consul .reality-doctor table,.doctor-selected .select-table{
+		margin-top: 10px;
+	}
+}

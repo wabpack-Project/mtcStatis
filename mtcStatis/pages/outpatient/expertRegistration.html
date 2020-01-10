@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="/mtcStatis/images/logo.png">
+	<link href="/mtcStatis/common/bootstrap/css/bootstrap.min.css" title="" rel="stylesheet">
+	<link title="" href="/mtcStatis/css/common.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/common/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/outpatient/registration.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/outpatient/expertRegistration.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<input type="hidden" id='parentHref' data-index='21'>
+	<div class="down-main">
+		<div class="right-product my-index right-full">
+			<div class="container-fluid">
+				<div class="info-center">
+					<div class="right">
+						<!--面包屑导航-->
+						<div class="breadcrumb">
+							<a href="javascript:;">远程门诊</a><em>/</em>
+							<span>专家门诊挂号</span> 
+						</div>
+					</div>
+					<div class="tab clearfix">
+						<div class="flow-process clearfix">
+							<div class="flow-registration">挂号</div>
+							<div class="flow-upload">上传病例</div>
+							<div class="flow-pay">缴费</div>
+						</div>
+						<div class="patient-box border_box padding_20 clearfix">
+							<div class="patient-name">
+								<s class="emphasis">*</s>
+								患者姓名：
+								<input type="text" name="">
+							</div>
+							<div class="patient-gendar">
+								<s class="emphasis">*</s>
+								性别：
+								<select></select>
+							</div>
+							<div class="patient-birth">
+								<s class="emphasis">*</s>
+								出生日期：
+								<input type="text" name="">
+							</div>
+							<div class="patient-phone">
+								<s class="emphasis">*</s>
+								联系电话：
+								<input type="text" name="">
+							</div>
+							<div class="identity-type">
+								<s class="emphasis">*</s>
+								证件类型：
+								<select></select>
+							</div>
+							<div class="identity-num">
+								<s class="emphasis">*</s>
+								证件号码：
+								<input type="text" name="">
+							</div>
+						</div>
+						<div class="expert-box padding_20 border_box">
+							<div class="search-box clearfix">
+								<div class="expert-department">
+									专家科室：
+									<input type="text" name="">
+								</div>
+								<div class="expert-name">
+									专家姓名：
+									<input type="text" name="">
+								</div>
+								<div class="expert-title">
+									专家头衔：
+									<select></select>
+								</div>
+								<div class="button-box">
+									<a class="button button-green search">查询</a>
+									<a class="button button-orange reset">重置</a>
+								</div>
+							</div>
+							<div class="expert-wrap">
+								<div class="left-right">
+									<span class="left-button"></span>
+									<span class="right-button"></span>
+								</div>
+								<div class="expert-list">
+									<ul class="clearfix"></ul>
+								</div>
+							</div>
+						</div>
+						<div class="scheduling-box padding_20 border_box">
+							<div class="change-week">
+								<span class="before-week before-next"></span>
+								<span class="current-week">本周</span>
+								<span class="next-week before-next hasweek"></span>
+							</div>
+							<table class="table table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>诊室</th>
+										<th><span class="Monday"></span>星期一</th>
+										<th><span class="Tuesday"></span>星期二</th>
+										<th><span class="Wednesday"></span>星期三</th>
+										<th><span class="Thursday"></span>星期四</th>
+										<th><span class="Friday"></span>星期五</th>
+										<th><span class="Saturday"></span>星期六</th>
+										<th><span class="Sunday"></span>星期日</th>
+									</tr>
+								</thead>
+								<tbody></tbody>
+							</table>
+						</div>
+						<div class="button-box">
+							<a class="button button-blue">下一步</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/mtcStatis/common/js/jquery-3.2.1.min.js"></script>
+	<script src="/mtcStatis/common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/paging.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/mtcStatis/js/common.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/data.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/outpatient/registration.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/outpatient/expertRegistration.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.noticeSetBox>div{
+	margin: 20px 0;
+}
+.noticeSetBox>div input[type="text"],.noticeSetBox>div textarea,.noticeSetBox>div select{
+	border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.noticeSetBox>div input[type="text"]:focus,.noticeSetBox>div textarea:focus,.noticeSetBox>div select:focus{
+	border: 1px solid #BAE8DE;
+}
+.noticeSetBox>div input[type="text"],.noticeSetBox>div select{
+	height: 28px;
+    line-height: 28px;
+}
+.noticePeople div{
+	display: none;
+	margin: 0 10px;
+}
+.noticeSetBox>div textarea{
+	width: 80%;
+	min-height: 100px;
+	vertical-align: middle;
+}
+@media screen and (max-width: 1366px){
+	.noticeSetBox>div{
+		margin: 10px 0;
+	}
+}

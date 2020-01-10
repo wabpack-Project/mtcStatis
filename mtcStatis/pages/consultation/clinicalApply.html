@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="/mtcStatis/images/logo.png">
+	<link href="/mtcStatis/common/bootstrap/css/bootstrap.min.css" title="" rel="stylesheet">
+	<link title="" href="/mtcStatis/css/common.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/common/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/viewCommon.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/consultation/clinicalApply.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!-- <input type="hidden" id='parentHref' data-index='1'> -->
+	<input type="hidden" name="" id="mtcdetails">
+	<div class="down-main">
+		<div class="right-product my-index right-full">
+			<div class="container-fluid">
+				<div class="info-center">
+					<div class="right">
+						<!--面包屑导航-->
+						<div class="breadcrumb">
+							<a href="javascript:;">远程会诊</a><em>/</em>
+							<span data-ind='1' data-type='0'>临床申请</span> 
+							<span data-ind='2' data-type='1'>影像申请</span> 
+						</div>
+					</div>
+					<div class="tab">
+						<ul class="tabs clearfix border_box">
+							<li name='tab1' class='current'>申请信息</li>
+							<li name='tab2'>病历信息</li>
+						</ul>
+						<div class="tab_content">
+							<div class="tab1 current">
+								<div class="base-change border_box padding_20">
+									<div class="change-box clearfix">
+										<div class="w100 returnvisit">
+											是否复诊：
+											<label>
+												<input type="radio" name="returnvisit" value="0" checked>
+												否
+											</label>
+											<label>
+												<input type="radio" name="returnvisit" value="1">
+												是
+											</label>
+											<a class="selectRecord">复诊记录选择</a>
+										</div>
+										<div class="patient-name">
+											<s class="emphasis">*</s>
+											患者姓名：
+											<div class="clearfix">
+												<input type="text" name=""><span class="choicePatient"></span>
+											</div>
+										</div>
+										<div class="patient-gendar">
+											<s class="emphasis">*</s>
+											患者性别：
+											<select></select>
+										</div>
+										<div class="patient-birth">
+											<s class="emphasis">*</s>
+											出生日期：
+											<input type="text" readonly class="input-date">
+										</div>
+										<div class="identity-type">
+											<s class="emphasis">*</s>
+											证件类型：
+											<select></select>
+										</div>
+										<div class="identity-num">
+											<s class="emphasis">*</s>
+											证件号码：
+											<input type="text" name="">
+										</div>
+										<div class="patient-age">
+											患者年龄（岁）：
+											<input type="text" name="">
+										</div>
+										<div class="patient-phone">
+											联系电话：
+											<input type="text" name="">
+										</div>
+										<div class="marital-status">
+											婚姻状况：
+											<select></select>
+										</div>
+										<div class="patient-nationality">
+											患者国籍：
+											<select></select>
+										</div>
+										<div class="patient-peoples">
+											所属民族：
+											<select></select>
+										</div>
+										<div class="patient-work">
+											工作单位：
+											<input type="text" name="">
+										</div>
+										<div class="patient-stature">
+											患者身高（cm）：
+											<input type="text" name="">
+										</div>
+										<div class="patient-weight">
+											患者体重（kg）：
+											<input type="text" name="">
+										</div>
+										<div class="patient-location">
+											家庭住址：
+											<input type="text" name="">
+										</div>
+									</div>
+									<div class="show_more slidedown"><s></s></div>
+								</div>
+								<div class="consul-change border_box clearfix padding_20">
+									<div class="consul-type">
+										<s class="emphasis">*</s>
+										会诊方式：
+										<label>
+											<input type="radio" name="consul-type" value="0" checked>
+											交互式
+										</label>
+										<label>
+											<input type="radio" name="consul-type" value="1">
+											离线式
+										</label>
+									</div>
+									<div class="consul-pattern">
+										<s class="emphasis">*</s>
+										会诊模式
+										<label>
+											<input type="checkbox" class='open-close' name="">
+											<span class="df" data-type='0'>单方</span>
+											<span class="mdt" data-type='1'>MDT</span>
+										</label>
+									</div>
+									<div class="is-emergency">
+										<s class="emphasis">*</s>
+										平急诊：
+										<label>
+											<input type="radio" name="is-emergency" value="0" checked>
+											平诊
+										</label>
+										<label>
+											<input type="radio" name="is-emergency" value="1">
+											急诊
+										</label>
+									</div>
+									<div class="discipline">
+										所属学科：
+										<select></select>
+									</div>
+									<div class="consul-time">
+										期望会诊时间：
+										<input type="text" readonly class="input-date input-time afterNow">
+									</div>
+									<div class="consul-doctor">
+										期望会诊专家：
+										<div class="multiple-box"></div>
+									</div>
+									<div class="hospital-apply">
+										申请医院
+										<!-- <select></select> -->
+										<span></span>
+									</div>
+									<div class="department-apply">
+										申请科室：
+										<select></select>
+									</div>
+									<div class="doctor-apply">
+										<s class="emphasis">*</s>
+										申请医生：
+										<input type="text">
+									</div>
+									<div class="doctor-phone">
+										<s class="emphasis">*</s>
+										联系电话：
+										<input type="text">
+									</div>
+								</div>
+							</div>
+							<div class="tab2">
+								<div class="medical-info border_box padding_20">
+									<div class="medical-box clearfix">
+										<div class="patient-narrate">
+											<s class="emphasis">*</s>
+											患者主诉：
+											<input type="text" name="">
+										</div>
+										<div class="primary-diagnosis">
+											<s class="emphasis">*</s>
+											初步诊断：
+											<input type="text" name="">
+										</div>
+										<div class="consul-purpose">
+											<s class="emphasis">*</s>
+											会诊目的：
+											<input type="text" name="">
+										</div>
+										<div class="medical-history">
+											患者病史：
+											<input type="text" name="">
+										</div>
+										<div class="present-medical">
+											现病史：
+											<input type="text" name="">
+										</div>
+										<div class="yesterday-medical">
+											既往史：
+											<input type="text" name="">
+										</div>
+										<div class="allergy-history">
+											过敏史：
+											<input type="text" name="">
+										</div>
+										<div class="family-medical">
+											家族史：
+											<input type="text" name="">
+										</div>
+										<div class="hospital-medicine">
+											入院用药：
+											<input type="text" name="">
+										</div>
+										<div class="cure-course">
+											治疗经过：
+											<input type="text" name="">
+										</div>
+										<div class="health-checkup">
+											体格检查：
+											<input type="text" name="">
+										</div>
+										<div class="additional-remarks">
+											补充说明：
+											<input type="text" name="">
+										</div>
+									</div>
+									<div class="show_more slidedown"><s></s></div>
+								</div>
+								<div class="information-wrap border_box clearfix">
+									<div class="screenage-information padding_20">
+										<p>
+											<span class="border-left-green">影像资料</span>
+											<a class="add-screenage pull-right">添加</a>
+										</p>
+										<table class="table table-hover table-bordered">
+											<thead>
+												<tr>
+													<th>影像号</th>
+													<th>患者姓名</th>
+													<th>设备类型</th>
+													<th>检查日期</th>
+													<th>影像数</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+									<div class="medical-information padding_20">
+										<p>
+											<span class="border-left-green">病史资料</span>
+										</p>
+										<table class="table table-bordered table-hover">
+											<thead>
+												<tr>
+													<th>附件名称</th>
+													<th>上传时间</th>
+													<th>描述</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+										<div id="zyupload" class="zyupload"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-box">
+							<a class="button button-blue button-submit" data-id="0">保存</a>
+							<a class="button button-green button-submit" data-id="10">提交</a>
+							<a class="button button-default">取消</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+	<div class="listBox selectReturnvisit">
+		<div class="list-title padding_20">
+			<span class="border-left-green">复诊记录选择</span>
+			<em class="close">x</em>
+		</div>
+		<div class="list-content padding_20">
+			<div class="wrap padding_20">
+				<div class="search-box clearfix">
+					<div class="consul-id">
+						会诊编号：
+						<input type="text" name="">
+					</div>
+					<div class="petient-name">
+						患者姓名：
+						<input type="text" name="">
+					</div>
+					<div class="start-date">
+						开始时间：
+						<input type="text" readonly class="input-date">
+					</div>
+					<div class="end-date">
+						结束时间：
+						<input type="text" readonly class="input-date">
+					</div>
+					<div class="button-box">
+						<a class="button button-green search">查询</a>
+						<a class="button button-orange reset">重置</a>
+					</div>
+				</div>
+			</div>
+			<div class="wrap padding_20">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>编号</th>
+							<th>患者姓名</th>
+							<th>申请医院</th>
+							<th>申请时间</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				<div class="noData padding_20">
+					暂时还没有数据
+				</div>
+				<div class="list-pagination clearfix">
+					<div class="pull-right page"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="listBox selectPatient">
+		<div class="list-title padding_20">
+			<span class="border-left-green">患者记录选择</span>
+			<em class="close">x</em>
+		</div>
+		<div class="list-content padding_20">
+			<div class="wrap padding_20">
+				<div class="search-box clearfix">
+					<div class="patient-type">
+						患者类型：
+						<select>
+							<option value="">请选择</option>
+							<option value="1">门诊</option>
+							<option value="2">住院</option>
+						</select>
+					</div>
+					<div class="outpatient-num">
+						就诊号：
+						<input type="text" name="">
+					</div>
+					<div class="button-box">
+						<a class="button button-green search">查询</a>
+						<a class="button button-orange reset">重置</a>
+					</div>
+				</div>
+			</div>
+			<div class="wrap padding_20">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>患者姓名</th>
+							<th>性别</th>
+							<th>证件号</th>
+							<th>就诊号</th>
+							<th>就诊日期</th>
+							<th>就诊科室</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				<div class="noData padding_20">
+					暂时还没有数据
+				</div>
+				<div class="list-pagination clearfix">
+					<div class="pull-right page"></div>
+				</div>
+			</div>
+		</div>
+		<div class="list-footer clearfix padding_20">
+			<span class="cancel">取消</span>
+			<span class="besure">添加</span>
+		</div>
+	</div>
+	<div class="listBox selectDoctor">
+		<div class="list-title padding_20">
+			<span class="border-left-green">专家选择</span>
+			<em class="close">x</em>
+		</div>
+		<div class="list-content padding_20">
+			<div class="wrap padding_20">
+				<div class="search-box clearfix">
+					<div class="doctor-hospital">
+						所在医院：
+						<select></select>
+					</div>
+					<div class="doctor-department">
+						所在科室：
+						<select></select>
+					</div>
+					<div class="doctor-name">
+						医生姓名：
+						<select></select>
+					</div>
+					<div class="doctor-title">
+						职称：
+						<select></select>
+					</div>
+					<div class="button-box">
+						<a class="button button-green search">查询</a>
+						<a class="button button-orange reset">重置</a>
+					</div>
+				</div>
+			</div>
+			<div class="wrap padding_20">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>
+								<input class="default" type='checkbox'></input>
+							</th>
+							<th>医生姓名</th>
+							<th>性别</th>
+							<th>选择日期</th>
+							<th>职称</th>
+							<th>所在医院</th>
+							<th>所在科室</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				<div class="noData padding_20">
+					暂时还没有数据
+				</div>
+				<div class="list-pagination clearfix">
+					<div class="pull-right page"></div>
+				</div>
+			</div>
+		</div>
+		<div class="list-footer clearfix padding_20">
+			<span class="cancel">取消</span>
+			<span class="besure">添加</span>
+		</div>
+	</div>
+	<div class="listBox selectScreenage">
+		<div class="list-title padding_20">
+			<span class="border-left-green">影像选择</span>
+			<em class="close">x</em>
+		</div>
+		<div class="list-content padding_20">
+			<div class="wrap padding_20">
+				<div class="search-box clearfix">
+					<div class="screenage-id">
+						影像号：
+						<input type="text" name="">
+					</div>
+					<div class="petient-name">
+						患者姓名：
+						<input type="text" name="">
+					</div>
+					<div class="start-date">
+						开始时间：
+						<input type="text" readonly class="input-date">
+					</div>
+					<div class="end-date">
+						结束时间：
+						<input type="text" readonly class="input-date">
+					</div>
+					<div class="button-box">
+						<a class="button button-green search">查询</a>
+						<a class="button button-orange reset">重置</a>
+					</div>
+				</div>
+			</div>
+			<div class="wrap padding_20">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>
+								<input class="default" type='checkbox'></input>
+							</th>
+							<th>影像号</th>
+							<th>患者姓名</th>
+							<th>设备类型</th>
+							<th>检查时间</th>
+							<th>影像数量</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+				<div class="noData padding_20">
+					暂时还没有数据
+				</div>
+				<div class="list-pagination clearfix">
+					<div class="pull-right page"></div>
+				</div>
+			</div>
+		</div>
+		<div class="list-footer clearfix padding_20">
+			<span class="cancel">取消</span>
+			<span class="besure">添加</span>
+		</div>
+	</div>
+	<script src="/mtcStatis/common/js/jquery-3.2.1.min.js"></script>
+	<script src="/mtcStatis/common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/zyupload-1.0.0.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/mtcStatis/js/common.js"></script>
+	<script src="/mtcStatis/common/js/fileupload.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/paging.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/mtcStatis/js/consultation/clinicalApply.js"></script>
+</body>
+</html>

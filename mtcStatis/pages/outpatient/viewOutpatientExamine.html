@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="/mtcStatis/images/logo.png">
+	<link href="/mtcStatis/common/bootstrap/css/bootstrap.min.css" title="" rel="stylesheet">
+	<link title="" href="/mtcStatis/css/common.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/outpatient/viewRegistration.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/outpatient/viewOutpatientExamine.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<input type="hidden" id='parentHref' data-index='22'>
+	<div class="down-main">
+		<div class="right-product my-index right-full">
+			<div class="container-fluid">
+				<div class="info-center">
+					<div class="right">
+						<!--面包屑导航-->
+						<div class="breadcrumb">
+							<a href="javascript:;">远程门诊</a><em>/</em>
+							<span data-type='1'>普通门诊</span> 
+							<span data-type='2'>专家门诊</span> 
+						</div>
+					</div>
+					<div class="tab clearfix">
+						<ul class="tabs clearfix border_box">
+							<li name="tab1" class="current">本次</li>
+						</ul>
+						<div class="tab_content">
+							<div class="tab1 current">
+								<div class="outpatient-box border_box clearfix">
+									<div class="item-box padding_20 clearfix">
+										<div class="item-icon patient-icon"></div>
+										<div class="item-info">
+											<p class="patient-name">
+												患者姓名：
+												<span></span>
+											</p>
+											<p class="patient-gendar">
+												患者性别：
+												<span></span>
+											</p>
+											<p class="patient-phone">
+												联系电话：
+												<span></span>
+											</p>
+											<p class="patient-birth">
+												出生日期：
+												<span></span>
+											</p>									
+										</div>
+									</div>
+									<div class="item-box padding_20 clearfix">
+										<div class="item-icon attendance-icon"></div>
+										<div class="item-info">
+											<p class="attendance-date">
+												就诊日期：
+												<span></span>
+											</p>
+											<p class="attendance-hospital">
+												就诊医院：
+												<span></span>
+											</p>
+											<p class="attendance-department">
+												就诊科室：
+												<span></span>
+											</p>
+											<p class="attendance-room">
+												就诊诊室：
+												<span></span>
+											</p>
+										</div>
+									</div>
+									<div class="item-box padding_20 clearfix">
+										<div class="item-icon outcall-icon"></div>
+										<div class="item-info">
+											<p class="outcall-doctor">
+												出诊医生：
+												<span></span>
+											</p>
+											<div class="outcall-state">
+												<p class="outcall">
+													正在诊疗中。。。
+													<a class="button button-blue video-meeting">视频会议</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="medical-box border_box padding_20">
+									<p class="border-left-green">病历信息</p>
+									<div class="base-info">
+										<div class="patient-narrate">
+											患者主诉：
+											<span></span>
+										</div>
+										<div class="medical-history">
+											病史：
+											<span></span>
+										</div>
+										<div class="clinic-purpose">
+											就诊目的：
+											<span></span>
+										</div>
+										<div class="medical-enclosure">
+											病历附件：
+											<div class="enclosure-box"></div>
+										</div>
+									</div>
+								</div>
+								<div class="conditionofapatient-info border_box padding_20">
+									<p class="border-left-green">病情描述</p>
+									<div class="information-wrap clearfix">
+										<div class="patient-narrate">
+											<s class="emphasis">*</s>
+											主诉：
+											<input type="text" name="">
+										</div>
+										<div class="medical-history">
+											病史：
+											<input type="text" name="">
+										</div>
+										<div class="health-checkup">
+											体格检查：
+											<input type="text" name="">
+										</div>
+									</div>
+								</div>
+								<div class="apply-box border_box clearfix">
+									<div class="examine-apply padding_20">
+										<div class="apply-header">
+											<span class="border-left-green">检查申请</span>
+											<a class="apply">申请</a>
+										</div>
+										<table class="table table-hover table-bordered">
+											<thead>
+												<tr>
+													<th>设备类型</th>
+													<th>检查部位</th>
+													<th>状态</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+									<div class="check-apply padding_20">
+										<div class="apply-header">
+											<span class="border-left-green">检验申请</span>
+											<a class="apply">申请</a>
+										</div>
+										<table class="table table-bordered table-hover">
+											<thead>
+												<tr>
+													<th>检验项目</th>
+													<th>状态</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+								</div>
+								<div class="prescription-box border_box padding_20">
+									<div class="prescription-header">
+										<span class="border-left-green">处方</span>
+										<a class="add-prescription">添加</a>
+									</div>
+									<table class="table table-hover table-bordered">
+										<thead>
+											<tr>
+												<th>内容</th>
+												<th>规格</th>
+												<th>数量</th>
+												<th>单位</th>
+												<th>用法</th>
+												<th>剂量</th>
+												<th>频次</th>
+												<th>疗程</th>
+												<th>特殊说明</th>
+												<th class='operate'>操作</th>
+											</tr>
+										</thead>
+										<tbody></tbody>
+									</table>
+								</div>
+								<div class="diagnose-result padding_20 border_box">
+									<p class="border-left-green">诊断结果</p>
+									<div class="information-wrap clearfix">
+										<div class="tentative-diagnosis">
+											初步诊断：
+											<span></span>
+										</div>
+										<div class="dispose-advice">
+											处理意见：
+											<span></span>
+										</div>
+									</div>
+								</div>
+								<div class="button-box">									
+									<a class="button button-blue button-submit" data-id='2'>暂存</a>
+									<a class="button button-primary button-submit" data-id='3'>挂起</a>
+									<a class="button button-green button-submit submit" data-id='1'>提交</a>
+									<a class="button button-default back">返回</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mask"></div>
+	<div class="listBox applyExamine">
+		<div class="list-title padding_20">
+			<span class="border-left-green">检查医嘱申请单</span>
+			<em class="close">x</em>
+		</div>
+		<div class="list-content padding_20">
+			<div class="wrap padding_20">
+				<div class="patient-info clearfix">
+					<div class="patient-name">
+						患者姓名：
+						<span></span>
+					</div>
+					<div class="patient-gendar">
+						患者性别：
+						<span></span>
+					</div>
+				</div>
+				<div class="medical-info">
+					<div class="patient-narrate">
+						&#x3000;&#x3000;主诉：
+						<span></span>
+					</div>
+					<div class="medical-history">
+						&#x3000;&#x3000;病史：
+						<span></span>
+					</div>
+					<div class="health-checkup">
+						体格检查：
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="wrap padding_20">
+				<div class="apply-wrap clearfix">
+					<div class="equipment-type">
+						设备类型：
+						<select></select>
+					</div>
+					<div class="medical-advice">
+						检查医嘱：
+						<select>
+							<option value="">请选择</option>
+						</select>
+					</div>
+					<div class="object-explain">
+						项目说明：
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list-footer clearfix padding_20">
+			<span class="cancel">取消</span>
+			<span class="besure">提交</span>
+		</div>
+	</div>
+	<div class="listBox applyCheck">
+		<div class="list-title padding_20">
+			<span class="border-left-green">检验医嘱申请单</span>
+			<em class="close">x</em>
+		</div>
+		<div class="list-content padding_20">
+			<div class="wrap padding_20">
+				<div class="patient-info clearfix">
+					<div class="patient-name">
+						患者姓名：
+						<span></span>
+					</div>
+					<div class="patient-gendar">
+						患者性别：
+						<span></span>
+					</div>
+				</div>
+				<div class="medical-info">
+					<div class="patient-narrate">
+						&#x3000;&#x3000;主诉：
+						<span></span>
+					</div>
+					<div class="medical-history">
+						&#x3000;&#x3000;病史：
+						<span></span>
+					</div>
+					<div class="health-checkup">
+						体格检查：
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<div class="wrap padding_20">
+				<div class="apply-wrap clearfix">
+					<div class="check-object">
+						检验项目：
+						<select>
+							<option value="">请选择</option>
+						</select>
+					</div>
+					<div class="object-explain">
+						项目说明：
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list-footer clearfix padding_20">
+			<span class="cancel">取消</span>
+			<span class="besure">提交</span>
+		</div>
+	</div>
+	<div class="listBox addPrescription">
+		<div class="list-title padding_20">
+			<span class="border-left-green">用药处方</span>
+			<em class="close">x</em>
+		</div>
+		<div class="list-content padding_20">
+			<div class="wrap padding_20">
+				<div class="prescription-info clearfix">
+					<div class="medicine-name">
+						药品名称：
+						<input type="text" name="">
+					</div>
+					<div class="medicine-specification">
+						规格：
+						<input type="text" name="">
+					</div>
+					<div class="medicine-count">
+						数量：
+						<input type="text" name="">
+					</div>
+					<div class="medicine-unit">
+						单位：
+						<select>
+							<option value="">请选择</option>
+							<option value="克（g）">克（g）</option>
+							<option value="毫克（mg）">毫克（mg）</option>
+							<option value="微克（μg）">微克（μg）</option>
+							<option value="升（L）">升（L）</option>
+							<option value="毫升（ml）">毫升（ml）</option>
+							<option value="片">片</option>
+							<option value="丸">丸</option>
+							<option value="粒">粒</option>
+							<option value="袋">袋</option>
+							<option value="支">支</option>
+							<option value="瓶">瓶</option>
+							<option value="盒">盒</option>
+							<option value="剂">剂</option>
+							<option value="滴">滴</option>
+						</select>
+					</div>
+					<div class="medicine-use">
+						用法：
+						<select>
+							<option value="">请选择</option>
+							<option value="口服">口服</option>
+							<option value="外用">外用</option>
+							<option value="注射">注射</option>
+						</select>
+					</div>
+					<div class="medicine-dosage">
+						剂量：
+						<input type="text" name="">
+					</div>
+					<div class="medicine-frequency">
+						频次（次/日）：
+						<input type="text" name="">
+					</div>
+					<div class="medicine-treatment">
+						疗程：
+						<input type="text" name="">
+					</div>
+					<div class="special-explain w100">
+						特殊说明：
+						<input type="text" name="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list-footer clearfix padding_20">
+			<span class="cancel">取消</span>
+			<span class="besure">提交</span>
+		</div>
+	</div>
+	<script src="/mtcStatis/common/js/jquery-3.2.1.min.js"></script>
+	<script src="/mtcStatis/common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/mtcStatis/js/common.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/outpatient/viewOutpatientExamine.js"></script>
+</body>
+</html>
