@@ -1,0 +1,88 @@
+var warningPostData = {}
+var warningPageNum = 1
+// 获取告警列表数据
+function getWarningData () {
+	$.ajax({
+		url: '',
+		type: 'post',
+		data: JSON.stringify(warningPostData),
+		contentType: 'application/json;charset=utf-8',
+		dataType: 'json',
+		success: function (msg) {
+			var data = msg.rows
+			if (data.length) {
+				var warningHtml = ''
+				for (var i = 0; i < data.length; i++) {
+					warningHtml += '<tr><td>' + data[i].serviceName + '</td><td>' + data[i].serviceClassName + '</td><td>' + data[i].warningTime + '</td><td>' + data[i].warningType + '</td><td>'
+					warningHtml += data[i].clearTime ? data[i].clearTime : ''
+					warningHtml += '</td><td><a class="viewDetails" href="javascript:;">查看</a></td></tr>'
+				}
+				$('.warning-table table tbody').html(warningHtml)
+			} else {
+				$('.warning-table table tbody').empty()
+				$('.warning-table .list-page').hide().siblings('.noData').show()
+			}
+		},
+		error: function (err) {
+			console.log(err)
+		}
+	})
+}
+// 获取告警分页数据
+function getWarningPageData (data) {
+	$(".warning-table .list-page").paging({
+		pageNum: warningPageNum,
+		totalNum: Math.ceil(data.total / Page.showCount),
+		totalList: data.total,
+		callback: function (num) {
+			warningPageNum = num
+			warningPostData.currentPage = num
+			getWarningData()
+		}
+	})
+	$('.warning-table .list-page').show().siblings('.noData').hide()
+}
+$(function () {
+	// dateRangePicker插件绑定
+	$('.form-search .waring-time-range').daterangepicker({
+		autoUpdateInput: false, //是否设置默认值
+		timePicker24Hour: true, //是否为24小时制
+		timePicker: false, //是否可选中时分
+		locale: {
+			applyLabel: '确定',
+			cancelLabel: '取消',
+			fromLabel: '起始时间',
+			toLabel: '结束时间',
+			daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+			monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
+		}
+	}).on('apply.daterangepicker', function (e, picker) {
+		$('.form-search .waring-time-range').val(picker.startDate.format('YYYY-MM-DD') + '~' + picker.endDate.format('YYYY-MM-DD'))
+	}).on('cancel.daterangepicker', function () {
+		$('.form-search .waring-time-range').val('')
+	})
+	warningPostData.showCount = 10
+	warningPostData.currentPage = 1
+	// getWarningData()
+	$('body').on('click', '.form-search .search', function () {
+		// 根据搜索条件查询告警历史数据
+		warningPostData.serviceName = $('.form-search .service-name').val() ? $('.form-search .service-name').val() : undefined
+		warningPostData.serviceClassName = $('.form-search .service-class-name').val() ? $('.form-search .service-class-name').val() : undefined
+		warningPostData.type = $('.form-search .service-type').val() ? $('.form-search .service-type').val() : undefined
+		var timeRange = $('.form-search .waring-time-range').val()
+		if (timeRange) {
+			warningPostData.startTime = timeRange.split('~')[0]
+			warningPostData.endTime = timeRange.split('~')[1]
+		} else {
+			warningPostData.startTime = undefined
+			warningPostData.endTime = undefined
+		}
+		warningPostData.showCount = 10
+		warningPostData.currentPage = 1
+		warningPageNum = 1
+		getWarningData()
+	}).on('click', '.warning-table tbody .viewDetails', function () {
+		// 查看告警历史数据详情
+		$('.mask').show()
+	})
+})

@@ -1,0 +1,113 @@
+{
+  "total":9,
+  "rows": [
+    {
+      "id": "12",
+      "serviceClassName": "分级诊疗数据上报",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "1",
+      "count": "2",
+      "open": 1
+    },
+    {
+      "id": "13",
+      "serviceClassName": "111",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "1",
+      "count": "2",
+      "open": 0
+    },
+    {
+      "id": "14",
+      "serviceClassName": "222",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "1",
+      "count": "2",
+      "open": 1
+    },
+    {
+      "id": "15",
+      "serviceClassName": "分级诊疗数据上报",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "0",
+      "count": "2",
+      "open": 1
+    },
+    {
+      "id": "16",
+      "serviceClassName": "111",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "0",
+      "count": "2",
+      "open": 0
+    },
+    {
+      "id": "17",
+      "serviceClassName": "111",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "0",
+      "count": "2",
+      "open": 0
+    },
+    {
+      "id": "18",
+      "serviceClassName": "111",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "0",
+      "count": "2",
+      "open": 0
+    },
+    {
+      "id": "19",
+      "serviceClassName": "111",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "0",
+      "count": "2",
+      "open": 0
+    },
+    {
+      "id": "20",
+      "serviceClassName": "111",
+      "serviceName": "分级诊疗HIS登录接口",
+      "serviceVersion": "1.0",
+      "framework": "CXJ",
+      "registerTime": "2019-08-02 09:06:55",
+      "link": "http://192.168.12.57:8087/LoginService",
+      "Status": "1",
+      "count": "2",
+      "open": 0
+    }
+  ]
+}

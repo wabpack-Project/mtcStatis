@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="images/logo.png" type="image/ico" />
+		<title>服务管控系统</title>
+		<!-- Bootstrap -->
+		<link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<!-- NProgress -->
+		<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+		<!-- iCheck -->
+		<link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+		<link href="../vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+		<!-- bootstrap-progressbar -->
+		<link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+		<!-- JQVMap -->
+		<link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+		<!-- Custom Theme Style -->
+		<link href="../build/css/custom.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/common.css">
+		<link rel="stylesheet" type="text/css" href="../vendors/paging/css/pageMe.css">
+		<link rel="stylesheet" type="text/css" href="css/registration/registration.css">
+
+	</head>
+
+	<body class="nav-md">
+		<div class="container body">
+			<div class="main_container">
+				<div class="col-md-3 left_col">
+					<div class="left_col scroll-view">
+						<div class="navbar nav_title" style="border: 0;">
+							<a href="FWGKFront.html" class="site_title"><img src="images/logo.png"> <span>服务管控系统</span></a>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<!-- menu profile quick info -->
+						<div class="profile clearfix">
+							<div class="profile_pic">
+								<img src="images/img.jpg" alt="..." class="img-circle profile_img">
+							</div>
+							<div class="profile_info">
+								<span>系统管理员</span>
+								<h2>王哲</h2>
+							</div>
+						</div>
+						<!-- /menu profile quick info -->
+
+						<br />
+
+						<!-- sidebar menu -->
+						<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+							<div class="menu_section">
+								<h3>业务功能</h3>
+								<ul class="nav side-menu">
+									<li>
+										<a href="FWGKFront.html">
+											<i class="fa fa-laptop"></i> 首页
+										</a>
+									</li>
+									<li>
+										<a>
+											<i class="fa fa-home"></i> 服务维护
+											<span class="fa fa-chevron-down"></span>
+										</a>
+										<ul class="nav child_menu">
+											<li><a href="FWGKServiceRegistration.html">服务注册与发现</a></li>
+										</ul>
+									</li>
+									<li>
+										<a>
+											<i class="fa fa-dashboard"></i> 服务监控
+											<span class="fa fa-chevron-down"></span>
+										</a>
+										<ul class="nav child_menu">
+											<li><a href="FWGKFront.html">业务量监控</a></li>
+											<li><a href="FWGKFront.html">服务状态监控</a></li>
+											<li><a href="FWGKServiceWarning.html">服务告警</a></li>
+										</ul>
+									</li>
+									<li>
+										<a>
+											<i class="fa fa-dashboard"></i> 历史查询
+											<span class="fa fa-chevron-down"></span>
+										</a>
+										<ul class="nav child_menu">
+											<li><a href="FWGKServiceHis.html">服务访问历史</a></li>
+											<li><a href="FWGKWarningHis.html">服务告警历史</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="menu_section">
+								<h3>系统管理</h3>
+								<ul class="nav side-menu">
+									<li><a><i class="fa fa-cogs"></i> 用户管理 <span class="fa fa-chevron-down"></span></a>
+										<ul class="nav child_menu">
+											<li><a href="FWGKAccountManage.html">账号管理</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- /sidebar menu -->
+					</div>
+				</div>
+
+				<!-- top navigation -->
+				<div class="top_nav">
+					<div class="nav_menu">
+						<nav>
+							<div class="nav toggle">
+								<a id="menu_toggle"><i class="fa fa-bars"></i></a>
+							</div>
+
+							<ul class="nav navbar-nav navbar-right">
+								<li class="">
+									<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										<img src="images/img.jpg" alt="">王哲
+										<span class=" fa fa-angle-down"></span>
+									</a>
+									<ul class="dropdown-menu dropdown-usermenu pull-right">
+										<li><a href="javascript:;">个人信息修改</a></li>
+										<li><a href="javascript:;">密码修改</a></li>
+										<li><a href="login.html"><i class="fa fa-sign-out pull-right"></i>退出登录</a></li>
+									</ul>
+								</li>
+
+								<li role="presentation" class="dropdown">
+									<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-bell"></i>
+										<span class="badge bg-red">6</span>
+									</a>
+									<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+										<li>
+											<a>
+												<i class="fa fa-bell"></i>
+												<span>
+													<span>服务状态异常</span>
+													<span class="time">3分钟前</span>
+												</span>
+												<span class="message">
+													分级诊疗His接口服务状态异常
+												</span>
+											</a>
+										</li>
+										<li>
+											<a>
+												<i class="fa fa-bell"></i>
+												<span>
+													<span>访问量预警</span>
+													<span class="time">1小时前</span>
+												</span>
+												<span class="message">
+													平台数据上报接口服务，1分钟访问量2300次，服务访问量巨大
+												</span>
+											</a>
+										</li>
+										<li>
+											<a>
+												<i class="fa fa-bell"></i>
+												<span>
+													<span>应答延迟预警</span>
+													<span class="time">20秒前</span>
+												</span>
+												<span class="message">
+													惠民平台数据上报接口服务，服务应答访问延迟5秒，应答延迟过大
+												</span>
+											</a>
+										</li>
+										<li>
+											<a>
+												<i class="fa fa-bell"></i>
+												<span>
+													<span>应答错误异常</span>
+													<span class="time">5分钟前</span>
+												</span>
+												<span class="message">
+													平台数据上报接口，服务响应404错误
+												</span>
+											</a>
+										</li>
+										<li>
+											<div class="text-center">
+												<a>
+													<strong>查看所有预警</strong>
+													<i class="fa fa-angle-right"></i>
+												</a>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- /top navigation -->
+
+				<!-- page content -->
+				<div class="right_col" role="main">
+					<div class="">
+						<div class="page-title">
+							<div class="title_left">
+								<h3>服务注册与发现 <small>Some examples to get you started</small></h3>
+							</div>
+
+							<div class="title_right">
+								<div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+									<div class="input-group">
+										<input type="text" class="form-control" name="makeupCo" id="makeupCo" class="makeinp" onfocus="setfocus(this)"
+										 oninput="setinput(this);" placeholder="查找">
+										<select name="makeupCoSe" id="typenum" onchange="changeF(this)" size="10" style="display:none;">
+											<option value="">李文安</option>
+											<option value="">张兴</option>
+											<option value="">无敌</option>
+											<option value="">a124</option>
+											<option value="">b123</option>
+											<option value="">c123</option>
+											<option value="">d123</option>
+											<option value="">e123</option>
+											<option value="">f123</option>
+											<option value="">g123</option>
+											<option value="">h123</option>
+											<option value="">i123</option>
+											<option value="">g123</option>
+											<option value="">k123</option>
+											<option value="">l123</option>
+											<option value="">m123</option>
+											<option value="">姗姗</option>
+											<option value="">西格</option>
+											<option value="">上去1</option>
+											<option value="">上去2</option>
+											<option value="">上去3</option>
+											<option value="">上去4</option>
+											<option value="">上去5</option>
+											<option value="">上去6</option>
+											<option value="">上去7</option>
+											<option value="">夏利</option>
+										</select>
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button">查询</button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="x_panel">
+									<div class="x_title">
+										<ul class="nav navbar-right panel_toolbox">
+											<li><a href="javascript:;" class="add_service"><i class="fa fa-plus green">&nbsp;添加服务</i></a>
+											</li>
+										</ul>
+										<div class="clearfix"></div>
+									</div>
+
+									<div class="x_content">
+										<div class="table-responsive service-table">
+											<table class="table table-striped jambo_table">
+												<thead>
+													<tr>
+														<th>
+															<input type="checkbox" id="check-all" class="checkbox-normal">
+															<!-- <input type="checkbox" id="check-all" class="flat"> -->
+														</th>
+														<th class="column-title">服务类别 </th>
+														<th class="column-title">服务名称 </th>
+														<th class="column-title">服务版本 </th>
+														<th class="column-title">接口技术框架 </th>
+														<th class="column-title">注册时间 </th>
+														<th class="column-title">对外服务链接 </th>
+														<th class="column-title">服务状态 </th>
+														<th class="column-title">开启/关闭 </th>
+														<th class="column-title">服务数量 </th>
+														<th class="column-title"><span class="nobr">操作</span></th>
+														<!-- <th class="bulk-actions" colspan="10">
+                              <a class="antoo" style="color:#fff; font-weight:500;">批量操作 ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                            </th> -->
+													</tr>
+												</thead>
+												<tbody>
+													<!--<tr>-->
+														<!--<td>-->
+															<!--<input type="checkbox" name="table_records" class="checkbox-normal">-->
+														<!--</td>-->
+														<!--<td>分级诊疗数据上报</td>-->
+														<!--<td>分级诊疗HIS登录接口</td>-->
+														<!--<td>1.0</td>-->
+														<!--<td>CXJ</td>-->
+														<!--<td>2019-08-02 09:06:55</td>-->
+														<!--<td>http://192.168.12.57:8087/LoginService</td>-->
+														<!--<td>正常</td>-->
+														<!--<td>-->
+															<!--<input type="checkbox" class="js-switch" />-->
+														<!--</td>-->
+														<!--<td>2</td>-->
+														<!--<td><a class="viewDetails" href="javascript:;">查看 </a><a href="#">修改 </a><a href="#">删除 </a>-->
+														<!--</td>-->
+													<!--</tr>-->
+													<!--<tr>-->
+														<!--<td>-->
+															<!--<input type="checkbox" name="table_records" class="checkbox-normal">-->
+														<!--</td>-->
+														<!--<td>分级诊疗数据上报</td>-->
+														<!--<td>分级诊疗HIS登录接口</td>-->
+														<!--<td>1.0</td>-->
+														<!--<td>CXJ</td>-->
+														<!--<td>2019-08-02 09:06:55</td>-->
+														<!--<td>http://192.168.12.57:8087/LoginService</td>-->
+														<!--<td>正常</td>-->
+														<!--<td>-->
+													<!--	<input type="checkbox" class="js-switch" />-->
+                                                    <!--</td>-->
+														<!--<td>2</td>-->
+														<!--<td><a class="viewDetails" href="javascript:;">查看 </a><a href="#">修改 </a><a href="#">删除 </a>-->
+														<!--</td>-->
+													<!--</tr>-->
+												</tbody>
+											</table>
+											<div class="list-page"></div>
+											<div class="noData">
+												暂时还没有数据
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /page content -->
+
+				<!-- footer content -->
+				<footer>
+					<div class="pull-right">
+					</div>
+					<div class="clearfix"></div>
+				</footer>
+				<!-- /footer content -->
+			</div>
+		</div>
+		<div class="mask">
+			<div class="setBox viewHis">
+				<div class="setBox-header">
+					<span>查看服务详情</span>
+					<em class="closeBox">X</em>
+				</div>
+				<div class="setBox-content">
+					<input type="text">
+				</div>
+				<div class="setBox-footer">
+					<button type="button" class="btn btn-default cancel">取消</button>
+					<button type="button" class="btn btn-success besure">确认</button>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="../vendors/jquery/dist/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+		<!-- FastClick -->
+		<script src="../vendors/fastclick/lib/fastclick.js"></script>
+		<!-- NProgress -->
+		<script src="../vendors/nprogress/nprogress.js"></script>
+		<!-- iCheck -->
+		<script src="../vendors/iCheck/icheck.min.js"></script>
+		<script src="../vendors/switchery/dist/switchery.js"></script>
+		<script src="../vendors/paging/js/pageMe.js"></script>
+		<!-- Custom Theme Scripts -->
+		<script src="../build/js/custom.min.js"></script>
+		<script type="text/javascript" src="./js/common.js"></script>
+		<script type="text/javascript" src="./js/FWGKServiceRegistration.js"></script>
+		<script type="text/javascript">
+			var TempArr = []; //存储option  
+			$(function() {
+				/*先将数据存入数组*/
+				$("#typenum option").each(function(index, el) {
+					TempArr[index] = $(this).text();
+				});
+				$(document).bind('click', function(e) {
+					var e = e || window.event; //浏览器兼容性     
+					var elem = e.target || e.srcElement;
+					while (elem) { //循环判断至跟节点，防止点击的是div子元素     
+						if (elem.id && (elem.id == 'typenum' || elem.id == "makeupCo")) {
+							return;
+						}
+						elem = elem.parentNode;
+					}
+					$('#typenum').css('display', 'none'); //点击的不是div或其子元素     
+				});
+			})
+
+			function changeF(this_) {
+				$(this_).prev("input").val($(this_).find("option:selected").text());
+				$("#typenum").css({
+					"display": "none"
+				});
+			}
+
+			function setfocus(this_) {
+				$("#typenum").css({
+					"display": ""
+				});
+				var select = $("#typenum");
+				for (i = 0; i < TempArr.length; i++) {
+					var option = $("<option></option>").text(TempArr[i]);
+					select.append(option);
+				}
+				setinput(this_);
+			}
+
+			function setinput(this_) {
+				var select = $("#typenum");
+				select.html("");
+				for (i = 0; i < TempArr.length; i++) {
+					//若找到以txt的内容开头的，添option  
+					if (TempArr[i].substring(0, this_.value.length).indexOf(this_.value) == 0) {
+						var option = $("<option></option>").text(TempArr[i]);
+						select.append(option);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

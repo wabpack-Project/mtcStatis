@@ -1,0 +1,97 @@
+body{
+	background: url('../images/admin_bg.jpg');
+}
+#loginform{
+	padding: 40px;
+}
+.login-box{
+	width: 450px;
+	background-color: white;
+    position: fixed;
+    bottom: 195px;
+    right: 95px;
+    border-radius: 4px;
+}
+.hello-text{
+	height: 88px;
+    line-height: 88px;
+    background-color: #3bb493;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}
+.errorText{
+	color: #f00;
+	text-align: center;
+}
+.input-box>div{
+	height: 50px;
+	line-height: 50px;
+}
+.input-box>div .input-icon{
+	padding: 3px 14px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+.input-box>div .name-icon{
+	background-image: url('../images/user-login.png');
+}
+.input-box>div .password-icon{
+	background-image: url('../images/key.png');
+}
+.input-box>div input{
+	outline: none;
+}
+.input-box>div:not(.login-auto) input{
+	width: 75%;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+}
+.input-box>div:not(.login-auto) input:focus{
+	border: 1px solid #f4f4f5;
+}
+.login-auto{
+	font-size: 14px;
+}
+input.default{
+  width: 1em;
+  height: 1em;
+  border: 1px solid #22B394;
+  background: #fff;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: text-bottom;
+}
+input.default:checked{
+  background: #22B394;
+  color: #fff;
+}
+input.default:checked:after{
+  content: '\2713';
+  position: absolute;
+  left: 1px;
+  top: -3px;
+}
+.login-button{
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	background: #3bb493;
+	cursor: pointer;
+}
+p.systemText{
+	color: #fff;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+}

@@ -1,0 +1,119 @@
+input,input:focus,input[type="checkbox"]:focus,input[type="radio"]:focus{
+	outline: none;
+}
+/*label.check-wrap{
+	font-weight: normal;
+	position: relative;
+	margin: 0;
+}
+input.open-close{
+	width: 3.5em;
+    height: 1.5em;
+    border-radius: 0.75em;
+    margin: 0;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: text-bottom;
+    background: #D7DCDE;
+}
+input.open-close:after{
+	position: absolute;
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #fff;
+    left: 0.4em;
+    top: 0.2em;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+input.open-close:checked{
+    background: #22B394;
+}
+input.open-close:checked:after {
+    left: calc(100% - 1.5em);
+}
+.check-wrap span{
+	position: absolute;
+    top: 0;
+    color: #fff;
+    line-height: 1.7em;
+    z-index: 1;
+}
+.check-wrap span.check-open{
+	left: 0.5em;
+}
+.check-wrap span.check-close{
+	right: 0.5em;
+}
+.check-wrap input.open-close:not(:checked)~span.check-open{
+	display: none;
+}
+.check-wrap input.open-close:checked~span.check-close{
+	display: none;
+}*/
+.form-search .form-group{
+    margin-bottom: 10px !important;
+}
+.form-search .form-group input,.form-search .form-group select,.form-search .form-group>div{
+    width: 100%;
+    max-width: 100%;
+}
+table input.checkbox-normal{
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: .5em;
+	vertical-align: middle;
+	margin: 0;
+	position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #D7DCDE;
+}
+table input.checkbox-normal:after{
+	position: absolute;
+	top: .1em;
+	left: .3em;
+	content: "\2714";
+	color: #fff;
+	display: none;
+}
+table input.checkbox-normal:checked{
+    background: #22B394;
+}
+table input.checkbox-normal:checked:after{
+	display: block;
+}
+.mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, .3);
+    display: none;
+}
+.setBox{
+    margin: 30px auto;
+    width: 600px;
+    background: #fff;
+}
+.setBox-header{
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.setBox-header em.closeBox{
+    font-style: normal;
+    padding: 0 10px;
+    float: right;
+    cursor: pointer;
+}
+.setBox-content{
+    padding: 15px;
+}
+.setBox-footer{
+    text-align: right;
+}

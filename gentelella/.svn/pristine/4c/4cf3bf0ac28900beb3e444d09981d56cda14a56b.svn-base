@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="./images/logo.png">
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+	<script src="../vendors/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/login.js"></script>
+</head>
+<body>
+	<div class="logo-image">
+		<img src="./images/logo_login.png">
+	</div>
+	<div class="login-box">
+		<div class="hello-text">
+			欢迎登录
+		</div>
+		<div class="errorText"></div>
+		<div id="loginform">
+			<div class="input-box">
+				<div class="user-name">
+					<span class="input-icon name-icon"></span>
+					<input type="text" name="username" placeholder="请输入用户名">
+				</div>
+				<div class="user-password">
+					<span class="input-icon password-icon"></span>
+					<input type="password" name="password" placeholder="请输入密码">
+				</div>
+				<div class="login-auto">
+					<label>
+						<input type="checkbox" name="rememberMe" class="default">
+						自动登录
+					</label>
+				</div>
+			</div>
+			<button class="login-button">登录</button>
+		</div>
+	</div>
+	<p class="systemText">MEDICAL SYSTEM</p>
+</body>
+</html>

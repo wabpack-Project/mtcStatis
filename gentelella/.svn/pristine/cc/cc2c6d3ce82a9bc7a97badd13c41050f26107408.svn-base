@@ -1,0 +1,44 @@
+var servicePageNum = 1 //当前页码
+var serviceShowCount = 10 //当前显示页数
+var totalData // 服务注册所有数据
+var showData = [] //当前页数据
+// 获取列表数据
+function getServiceData () {
+	$.ajax({
+		url: '',
+		type: 'post',
+		success: function (msg) {
+			var data = msg.rows
+			if (data.length) {
+				totalData = msg
+				getServicePageData()
+			} else {
+				$('.service-table table tbody').empty()
+				$('.service-table .list-page').hide().siblings('.noData').show()
+			}
+		},
+		error: function (err) {
+			console.log(err)
+		}
+	})
+}
+// 获取分页列表数据
+function getServicePageData () {
+	$(".service-table .list-page").paging({
+		pageNum: servicePageNum,
+		totalNum: Math.ceil(totalData.total / Page.showCount),
+		totalList: totalData.total,
+		callback: function (num) {
+			servicePageNum = num
+			var listHtml = ''
+			for (var i = (servicePageNum - 1) * serviceShowCount; i < servicePageNum * serviceShowCount; i++) {
+
+			}
+			$('.service-table table tbody').html(listHtml)
+		}
+	})
+	$('.service-table .list-page').show().siblings('.noData').hide()
+}
+$(function () {
+	// getServiceData()
+})
