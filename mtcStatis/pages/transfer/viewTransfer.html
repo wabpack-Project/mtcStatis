@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="/mtcStatis/images/logo.png">
+	<link href="/mtcStatis/common/bootstrap/css/bootstrap.min.css" title="" rel="stylesheet">
+	<link title="" href="/mtcStatis/css/common.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/common/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/viewCommon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<input type="hidden" id='parentHref'>
+	<div class="down-main">
+		<div class="right-product my-index right-full">
+			<div class="container-fluid">
+				<div class="info-center">
+					<div class="right">
+						<!--面包屑导航-->
+						<div class="breadcrumb">
+							<a href="javascript:;">双向转诊</a><em>/</em>
+							<span>转诊查看</span> 
+						</div>
+					</div>
+					<div class="tab clearfix">
+						<div class="refuse-content">
+							拒绝理由：
+							<span></span>
+						</div>
+						<ul class="tabs clearfix border_box">
+							<li name='tab1' class='current'>申请信息</li>
+							<li name='tab2'>病历信息</li>
+						</ul>
+						<div class="tab_content">
+							<div class="tab1 current">
+								<div class="patient-info info-box border_box padding_20">
+									<div class="patient-box clearfix slide-box">
+										<div class="patient-name">
+											患者姓名：
+											<span></span>
+										</div>
+										<div class="patient-gendar">
+											患者性别：
+											<span></span>
+										</div>
+										<div class="patient-birth">
+											出生日期：
+											<span></span>
+										</div>
+										<div class="identity-type">
+											证件类型：
+											<span></span>
+										</div>
+										<div class="identity-num">
+											证件号码：
+											<span></span>
+										</div>
+										<div class="insurance-type">
+											医保类型：
+											<span></span>
+										</div>
+										<div class="insurance-num">
+											医保卡号：
+											<span></span>
+										</div>
+										<div class="patient-age">
+											患者年龄：
+											<span></span>
+										</div>
+										<div class="patient-phone">
+											联系电话：
+											<span></span>
+										</div>
+										<div class="patient-nationality">
+											患者国籍：
+											<span></span>
+										</div>
+										<div class="patient-peoples">
+											所属民族：
+											<span></span>
+										</div>
+										<div class="patient-work">
+											工作单位：
+											<span></span>
+										</div>
+										<div class="patient-job">
+											职业：
+											<span></span>
+										</div>
+										<div class="patient-stature">
+											患者身高：
+											<span></span>
+										</div>
+										<div class="patient-weight">
+											患者体重：
+											<span></span>
+										</div>
+										<div class="patient-location">
+											家庭住址：
+											<span></span>
+										</div>
+									</div>
+									<div class="show_more slidedown"><s></s></div>
+								</div>
+								<div class="consul-info info-box border_box clearfix padding_20">
+									<div class="reception-hospital">
+										接诊医院
+										<span></span>
+									</div>
+									<div class="reception-department">
+										接诊科室：
+										<span></span>
+									</div>
+									<div class="reception-type">
+										转诊类型：
+										<span></span>
+									</div>
+									<div class="is-emergency">
+										平急诊：
+										<span></span>
+									</div>
+									<div class="antipate-time">
+										预计到诊时间：
+										<span></span>
+									</div>
+									<div class="bunk">
+										床位：
+										<span></span>
+									</div>
+									<div class="hospital-apply">
+										申请医院：
+										<span></span>
+									</div>
+									<div class="department-apply">
+										申请科室：
+										<span></span>
+									</div>
+									<div class="doctor-apply">
+										申请医生：
+										<span></span>
+									</div>
+									<div class="doctor-phone">
+										联系电话：
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="tab2">
+								<div class="medical-info info-box border_box clearfix padding_20">
+									<div class="medical-box slide-box clearfix">
+										<div class="transfer-disease">
+											转诊病种：
+											<span></span>
+										</div>
+										<div class="icd10-disease w100">
+											ICD-10病种：
+											<div></div>
+										</div>
+										<div class="patient-narrate">
+											主诉：
+											<span></span>
+										</div>
+										<div class="ehr-url">
+											EHR链接：
+											<a href="javascript:;" onclick='ehr()'>链接地址</a>
+										</div>
+										<div class="clinical-diagnosis">
+											临床诊断：
+											<span></span>
+										</div>
+										<div class="transfer-purpose">
+											转诊目的：
+											<span></span>
+										</div>
+										<div class="medical-history">
+											患者病史：
+											<span></span>
+										</div>
+										<div class="present-medical">
+											现病史：
+											<span></span>
+										</div>
+										<div class="yesterday-medical">
+											既往史：
+											<span></span>
+										</div>
+										<div class="allergy-history">
+											过敏史：
+											<span></span>
+										</div>
+										<div class="family-medical">
+											家族史：
+											<span></span>
+										</div>
+										<div class="hospital-medicine">
+											入院用药：
+											<span></span>
+										</div>
+										<div class="cure-course">
+											治疗经过：
+											<span></span>
+										</div>
+										<div class="health-checkup">
+											体格检查：
+											<span></span>
+										</div>
+										<div class="additional-remarks">
+											补充说明：
+											<span></span>
+										</div>
+									</div>
+									<div class="show_more slidedown"><s></s></div>
+								</div>
+								<div class="information-wrap border_box clearfix">
+									<div class="screenage-information padding_20">
+										<p class="border-left-green">影像信息</p>
+										<table class="table table-hover table-bordered">
+											<thead>
+												<tr>
+													<th>影像号</th>
+													<th>患者姓名</th>
+													<th>设备类型</th>
+													<th>检查日期</th>
+													<th>影像数</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+									<div class="medical-information padding_20">
+										<p class="border-left-green">病历附件</p>
+										<table class="table table-hover table-bordered">
+											<thead>
+												<tr>
+													<th>附件名称</th>
+													<th>上传时间</th>
+													<th>描述</th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="button-box pull-right">
+							<a class="button button-default back">返回</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/mtcStatis/common/js/jquery-3.2.1.min.js"></script>
+	<script src="/mtcStatis/common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/paging.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/DES3.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/mtcStatis/js/common.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/transfer/viewTransfer.js"></script>
+</body>
+</html>

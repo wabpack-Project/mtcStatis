@@ -1,0 +1,9 @@
+.tab>.information-box{
+	float: left;
+	width: 75%;
+	margin-right: 1%;
+}
+.tab>.status-box{
+	float: left;
+	width: 24%;
+}

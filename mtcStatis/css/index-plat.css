@@ -1,0 +1,151 @@
+.index_plat_info .index_plat_box,.system_statis .index_plat_box{
+	width:49%;
+	float: left;
+}
+.index_plat_info .index_plat_box:first-child,.system_statis .index_plat_box:first-child{
+	margin-right: 2%;
+}
+.index_header a ,.work_statistics_first a{ 
+	color: #a1a1a1;
+	float: right; 
+	font-size: 14px; 
+}
+.index_plat_info .index_plat_box table,.system_statis,.system_statis .system_table,.work_statistics_second,.index_plat_hospital{
+	margin-top: 20px;
+}
+.work_statistics { 
+	margin-top: 20px; 
+	width: 100%; 
+	height: 100px; 
+	display: table; 
+	min-width:1100px;
+}
+.work_statistics_second>table{
+	width: 100%;
+}
+.work_statistics_second>table>tbody>tr:hover{
+	background: #fff;
+	color: #333;
+}
+.work_statistics_second .table-title{
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+}
+.work_statistics_second .table-title tr td:last-child .table-title{
+	border-left: none;
+}
+.work_statistics_second .table-title i{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.work_statistics_second .table-title i.icon-transferapplication{
+	background: url('../images/91.png');
+}
+.work_statistics_second .table-title i.icon-ontheaudit{
+	background: url('../images/8.png');
+}
+.work_statistics_second .table-title i.icon-transfertoconsulta{
+	background: url('../images/7.png');
+}
+.work_statistics_second .table-title i.icon-downapplication{
+	background: url('../images/85.png');
+}
+.work_statistics_second .table-title i.icon-undertheaudit{
+	background: url('../images/65.png');
+}
+.work_statistics_second .table-title i.icon-clinicalapplication{
+	background: url('../images/11.png');
+}
+.work_statistics_second .table-title i.icon-imageapplication{
+	background: url('../images/22.png');
+}
+.work_statistics_second .table-title i.icon-applyforreview{
+	background: url('../images/33.png');
+}
+.work_statistics_second .table-title i.icon-triage{
+	background: url('../images/44.png');
+}
+.work_statistics_second .table-title i.icon-expertoutpatientsc{
+	background: url('../images/55.png');
+}
+.work_statistics_second .table-title span b{
+	color: #35A58A;
+	margin: 0 5px;
+}
+.work_statistics_second>table table,.work_statistics_second>table>tbody>tr:last-child{
+	display: none;
+}
+.work_statistics_second table th a{
+	color:  #35A58A;
+}
+#work_statis_tbody2>div{
+	float: left;
+	width: 25%;
+	overflow: hidden;
+}
+#work_statis_tbody2>div:not(:last-child){
+	padding-right: 10px;
+}
+#hospitalInfo .hospital_info{
+	margin-bottom: 20px;
+}
+#hospitalInfo .hospital_info:not(:first-child){
+	display: none;
+}
+#hospitalInfo .every_hospital{
+	float: left;
+	width: 19%;
+	background: #fff;
+}
+#hospitalInfo .every_hospital:not(:last-child){
+	margin-right: 1.25%;
+}
+#hospitalInfo .hospital-content{
+	margin-top: 20px;
+}
+#hospitalInfo .hospital-content img{
+	margin-right: 20px;
+    max-width: 28%;
+}
+#hospitalInfo .hospital-content div{
+	padding-top: 12px;
+	max-width: 67%;
+}
+#hospitalInfo .hospital-content p{
+	color: #666;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.index_plat_hospital .hospital_more{
+	text-align: center;
+}
+.index_plat_hospital .hospital_more s{
+	display: inline-block;
+	width: 24px;
+	height: 14px;
+	background: url('../images/51.png') no-repeat;
+	cursor: pointer;
+}
+.index_plat_hospital .hospital_more.slidedown s{
+	background: url('../images/52.png') no-repeat;
+}
+@media screen and (max-width: 1366px) {
+	.index_plat_info .index_plat_box table,.work_statistics,.work_statistics_second,.system_statis,.system_statis .system_table,.index_plat_hospital,#hospitalInfo .hospital-content{
+		margin-top: 10px;
+	}
+	#hospitalInfo .hospital_info{
+		margin-bottom: 10px;
+	}
+	#hospitalInfo .hospital-content img{
+		margin-right: 10px;
+	}
+	#hospitalInfo .hospital-content p,#hospitalInfo .hospital-content p span{
+		font-size: 12px;
+	}
+}

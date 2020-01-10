@@ -1,0 +1,125 @@
+.hospital-bar span{
+	color: #22B394;
+    font-size: 16px;
+    font-weight: bold;
+}
+.department-bar li,.expert-bar li{
+	float: left;
+	margin: 0 15px;
+    padding: 0 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.department-bar li.selected,.expert-bar li.selected{
+	border: 1px solid #21AA8D;
+    background: #D6F0E9;
+}
+.scheduling-box{
+	margin-top:20px;
+}
+.scheduling-box .scheduling-date-box{
+	float: left;
+	width: 60%;
+	margin-right: 2%;
+}
+.scheduling-date-box .month-list li{
+	float: left;
+	width: 16.66%;
+	padding: 10px 0;
+	text-align: center;
+	background: #eaeaea;
+	color: #666;
+	cursor: pointer;
+}
+.scheduling-date-box .month-list li.selected{
+	background: #21AA8D;
+	color: #fff;
+}
+.scheduling-date-box tbody tr.selected{
+	background: #f5f5f5;
+	color: #3bb493;
+}
+.scheduling-box .scheduling-doctor-box{
+	float: left;
+	width: 38%;
+}
+.scheduling-doctor-box .list-box{
+	height: 170px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.scheduling-doctor-box .list-box::-webkit-scrollbar{
+	width: 4px;
+	background: #eaeaea;
+}
+.scheduling-doctor-box .list-box::-webkit-scrollbar-thumb{
+	background: #22B394;
+	border-radius: 2px;
+}
+.scheduling-doctor-box .list-box .doctor-item{
+	display: inline-block;
+    padding: 5px 10px;
+    background: #21AA8D;
+    color: #fff;
+    border-radius: 3px;
+    max-width: 45%;
+    margin: 1%;
+    cursor: move;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.scheduling-doctor-box .doctor-container{
+	margin-top: 20px;
+	display: none;
+}
+.doctor-container .selectInfo-box .registration-cost,.doctor-container .selectInfo-box .outpatient-num{
+	display: inline-block;
+}
+.doctor-container .selectInfo-box>div:not(.button-box){
+	margin: 5px 0;
+}
+.doctor-container .selectInfo-box select,.doctor-container .selectInfo-box input[type="text"]{
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.doctor-container .selectInfo-box input[type="text"]{
+	width: 100px;
+}
+.doctor-container .selectInfo-box select{
+	min-width: 100px;
+}
+.doctor-container .selectInfo-box select:focus,.doctor-container .selectInfo-box input[type="text"]:focus{
+	border: 1px solid #BAE8DE;
+}
+.doctor-container .selectInfo-box .doctor-content{
+	height: 170px;
+	text-align: center;
+	background: #f4f4f5;
+}
+.doctor-container .selectInfo-box .doctor-content .dragged{
+	display: inline-block;
+    padding: 5px 10px;
+    background: #1cb394;
+    color: #fff;
+    border-radius: 3px;
+    max-width: 45%;
+    margin: 1%;
+    cursor: default;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 1366px){
+	.scheduling-box,.scheduling-doctor-box .doctor-container{
+		margin-top: 10px;
+	}
+}

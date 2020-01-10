@@ -1,0 +1,308 @@
+/*信息分析*/
+
+body {
+    background-color: #f0f0f0;
+}
+.center {
+    text-align: center;
+}
+.hospital-distribute>div{
+	float: left;
+	width: 49%;
+}
+.hospital-distribute>div:first-child{
+	margin-right: 2%;
+}
+.hospital-distribute .statis-total>div:not(:last-child),.traffic_rank>div:first-child,.traffic-middle{
+	margin-bottom: 20px;
+}
+.hospital-distribute .blank{
+	float: left;
+	width: 32%;
+    height: 100px;
+}
+.hospital-distribute .blank:not(:last-child){
+	margin-right: 2%;
+}
+.statis-total .blank{
+	padding-top: 20px;
+}
+.hospital-distribute .blank.circle_chart{
+	height: 260px;
+}
+.font_color {
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.statis-total .font_color s{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.statis-total .hospital-total .font_color s{
+	background-image: url('/mtcStatis/images/1.png');
+}
+.statis-total .doctor-total .font_color s{
+	background-image: url('/mtcStatis/images/2.png');
+}
+.statis-total .medical-total .font_color s{
+	background-image: url('/mtcStatis/images/3.png');
+}
+.statis-total .transfer-total .font_color s{
+	background-image: url('/mtcStatis/images/4.png');
+}
+.statis-total .consultant-total .font_color s{
+	background-image: url('/mtcStatis/images/5.png');
+}
+.statis-total .outpatient-total .font_color s{
+	background-image: url('/mtcStatis/images/6.png');
+}
+.blank span.font_num{
+	display:block;
+    text-align:center;
+}
+.font_num {
+    font-size: 20px;
+    color: #ff9a00;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.hospital-distribute .map>div{
+	float: left;
+}
+.hospital-distribute .map .map_box{
+	width: 60%;
+}
+.hospital-distribute .map .top_box{
+	width: 40%;
+}
+.hospital-distribute .map img{
+	max-height: 410px;
+}
+.map_hospital{
+    height: 430px;
+    overflow: auto;
+    margin-top: 30px;
+}
+.map_hospital li,.map_hospital p{
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+}
+.map_hospital li{
+    color: #333;
+    border-top: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.map_hospital li:hover{
+    color: #38B79A;
+}
+.map_hospital p,.map_hospital li:hover{
+    background: #f4f4f5;
+}
+.trend_box,.traffic-middle{
+	margin-top: 20px;
+}
+.trend_wrap{
+	float: left;
+	width: 32%;
+    height: 340px;
+    background:#fff;
+}
+.trend_wrap:not(:last-child){
+	margin-right: 2%;
+}
+.trend_chart {
+    background-color: white !important;
+    height: 296px;
+}
+.traffic-middle>div{
+	float: left;
+	width: 49%;
+}
+.traffic-middle .traffic{
+	background: #fff;
+	margin-right: 2%;
+}
+.traffic-middle .traffic .table_box{
+	margin-top: 20px;
+	height: 389px;
+	overflow: auto;
+}
+.every_rank {
+	float: left;
+	width: 32%;
+    height: 225px;
+    background: #fff;
+}
+.every_rank:not(:last-child){
+	margin-right: 2%;
+}
+.traffic_rank ul {
+    margin-top: 20px;
+}
+.traffic_rank ul>li {
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.traffic_rank ul span{
+    font-size: 12px;
+}
+.traffic_rank ul>li>span:nth-child(2){ 
+	float: left;
+    max-width: 53%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.rank_num {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    float: left;
+}
+
+.rank_num i {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    color: white;
+    overflow: hidden;
+}
+.footer #bizTop>div{
+	float: left;
+	width: 19%;
+	background: #fff;
+	height: 160px;
+}
+.footer #bizTop>div:not(:last-child){
+	margin-right: 1.25%;
+}
+.footer_name {
+    height: 180px;
+    line-height: 180px;
+    width: 190px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.star {
+    height: 160px;
+    background-color: white;
+    margin-right: 10px;
+}
+.star_content {
+    margin: 18px 0 0 30px;
+}
+.star_content img {
+    margin-right: 20px;
+    max-width: 30%;
+}
+.gray_color {
+    color: #666666;
+}
+.doctor_star {
+    font-size: 16px;
+    font-weight: bold;
+}
+.gray_color,.gray_color span{
+    font-size: 14px;
+}
+@media screen and (max-width: 1366px) {
+	.hospital-distribute .statis-total>div:not(:last-child),.traffic_rank>div:first-child,.traffic-middle{
+		margin-bottom: 10px;
+	}
+	.hospital-distribute .blank{
+		height: 70px;
+	}
+	.statis-total .blank{
+		padding-top: 10px;
+	}
+	.hospital-distribute .blank.circle_chart{
+		height: 186px;
+	}
+	.font_num,.trend_box,.traffic-middle,.traffic-middle .traffic .table_box,.traffic_rank ul{
+		margin-top: 10px;
+	}
+	.hospital-distribute .map img{
+		max-height: 290px;
+	}
+	.map_hospital{
+		height: 296px;
+	}
+	.map_hospital li, .map_hospital p{
+		height: 28px;
+		line-height: 28px;
+		font-size: 14px;
+	}
+	.trend_wrap{
+		height: 240px;
+	}
+	.trend_wrap .trend_chart{
+		height: 196px;
+	}
+	.traffic-middle .traffic .table_box{
+		height: 279px;
+	}
+	.table_box th,.table_box td{
+		font-size: 14px;
+	}
+	.traffic_rank .every_rank{
+		height: 160px;
+	}
+	.traffic_rank ul>li{
+		height: 22px;
+		line-height: 22px;
+	}
+	.rank_num{
+		margin-right: 10px;
+	}
+	.rank_num img{
+		max-height: 18px;
+	}
+	.rank_num i{
+		left: 4px;
+		font-size: 14px;
+	}
+	.traffic_rank ul>li>span:nth-child(2){
+		max-width: 80px;
+	}
+	.footer #bizTop>div{
+		height: 114px;
+	}
+	.start{
+		height: 114px;
+	}
+	.doctor_star{
+		font-size: 14px;
+	}
+	.gray_color,.gray_color span{
+	    font-size: 12px;
+	}
+	.star_content img {
+	    margin-right: 10px;
+	    width: 54px;
+	}
+}

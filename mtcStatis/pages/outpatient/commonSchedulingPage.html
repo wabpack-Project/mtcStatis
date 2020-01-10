@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="shortcut icon" href="/mtcStatis/images/logo.png">
+	<link href="/mtcStatis/common/bootstrap/css/bootstrap.min.css" title="" rel="stylesheet">
+	<link title="" href="/mtcStatis/css/common.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/common/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/outpatient/schedulingPage.css" rel="stylesheet" type="text/css">
+	<link title="" href="/mtcStatis/css/outpatient/commonSchedulingPage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<input type="hidden" id='parentHref' data-index='24'>
+	<div class="down-main">
+		<div class="right-product my-index right-full">
+			<div class="container-fluid">
+				<div class="info-center">
+					<div class="right">
+						<!--面包屑导航-->
+						<div class="breadcrumb">
+							<a href="javascript:;">远程门诊</a><em>/</em>
+							<span>普通门诊排班</span> 
+						</div>
+					</div>
+					<div class="tab clearfix">
+						<div class="hospital-content border_box padding_20">
+							<div class="hospital-bar">
+								当前医院：
+								<span></span>
+							</div>
+							<div class="department-bar">
+								选择科室：
+								<ul class="clearfix"></ul>
+							</div>
+						</div>
+						<div class="scheduling-box clearfix">
+							<div class="scheduling-date-box padding_20 border_box">
+								<div class="button-box">
+									<a class="button button-blue preview">预览</a>
+								</div>
+								<div class="month-list">
+									<ul class="clearfix"></ul>
+								</div>
+								<table class="table table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>星期一</th>
+											<th>星期二</th>
+											<th>星期三</th>
+											<th>星期四</th>
+											<th>星期五</th>
+											<th>星期六</th>
+											<th>星期日</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody></tbody>
+								</table>
+								<div class="button-box">
+									<a class="button button-green">提交</a>
+									<a class="button button-default">取消</a>
+								</div>
+							</div>
+							<div class="scheduling-doctor-box">
+								<div class="doctor-list padding_20 border_box">
+									<p class="border-left-green">医生信息</p>
+									<div class="list-box"></div>
+								</div>
+								<div class="doctor-container padding_20 border_box">
+									<p class="border-left-green">选择出诊医生</p>
+									<div class="selectInfo-box">
+										<div class="date-type">
+											设定类型：
+											<label>
+												<input type="radio" value="all" name='date-type'>全部
+											</label>
+											<label>
+												<input type="radio" value="work" name='date-type'>工作日
+											</label>
+											<label>
+												<input type="radio" value="rest" name='date-type'>休息日
+											</label>
+											<label>
+												<input type="radio" value="given" name='date-type'>指定日期
+												<select></select>
+											</label>
+										</div>
+										<div class="registration-cost">
+											挂号费：
+											<input type="text" name="">
+										</div>
+										<div class="outpatient-num">
+											出诊数：
+											<input type="text" name="">
+										</div>
+										<div class="doctor-content border_box padding_20">
+											请将所需医生拖拽到此处
+										</div>
+										<div class="button-box">
+											<a class="button button-green">设定</a>
+											<a class="button button-default">重置</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/mtcStatis/common/js/jquery-3.2.1.min.js"></script>
+	<script src="/mtcStatis/common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"></script>
+	<script src="/mtcStatis/common/js/paging.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/mtcStatis/js/common.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/outpatient/schedulingPage.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/outpatient/commonSchedulingPage.js"></script>
+</body>
+</html>

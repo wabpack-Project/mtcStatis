@@ -1,0 +1,108 @@
+<nav class="nav navbar-default navbar-mystyle navbar-fixed-top">
+	<div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="logo">
+				<a class="mystyle-color" href="http://10.82.71.16/"><img src="/mtcStatis/images/logo.png"></a>
+			</li>
+			<li class="li-border"><a href="http://10.82.71.16/"><span class="logo-name" id="mtcname"></span></a></li>
+		</ul>
+		<ul class="nav navbar-nav right-nav pull-right">
+			<li class="message">
+				<a href="javascript:;">
+					<i class="icon bell"></i>
+					消息
+				</a>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+					<i class="icon user"></i>
+					<span id="username"></span>
+					<s></s>
+				</a>
+				<div class="dropdown-menu">
+					<em></em>
+					<ul>
+						<li class='admin-info' name='showinfo'>管理员信息</li>
+						<li class="user-set" name='setuser'>个人设定</li>
+						<li class="password-set" name='setpassword'>密码设定</li>
+					</ul>
+				</div>
+			</li>
+			<li class="logout">
+				<a href="#">
+					<i class="icon out"></i>
+					退出
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="mask"></div>
+<div class="setBox showinfo">
+	<div class="set-title padding_20">
+		<span class="border-left-green">管理员信息</span>
+		<em class="close">x</em>
+	</div>
+	<div class="set-content padding_20">
+		<div class="wrap padding_20">
+			<div class="admin-name">姓名：<span></span></div>
+			<div class="admin-organ">机构：<span></span></div>
+			<div class="admin-phone">手机号：<span></span></div>
+		</div>
+	</div>
+	<div class="set-footer clearfix padding_20">
+		<span class="cancel">取消</span>
+	</div>
+</div>
+<div class="setBox setuser">
+	<div class="set-title padding_20">
+		<span class="border-left-green">修改用户信息</span>
+		<em class="close">x</em>
+	</div>
+	<div class="set-content padding_20">
+		<div class="wrap padding_20">
+			<div class="login-name">
+				用户名：
+				<input type="text" value="" readonly>
+			</div>
+			<div class="admin-name">
+				姓名：
+				<input type="text">
+			</div>
+			<div class="admin-phone">
+				电话：
+				<input type="text">
+			</div>
+		</div>
+	</div>
+	<div class="set-footer clearfix padding_20">
+		<span class="cancel">取消</span>
+		<span class="besure">确定</span>
+	</div>
+</div>
+<div class="setBox setpassword">
+	<div class="set-title padding_20">
+		<span class="border-left-green">修改密码</span>
+		<em class="close">x</em>
+	</div>
+	<div class="set-content padding_20">
+		<div class="wrap padding_20">
+			<div class="old-password">
+				原密码：
+				<input type="password" value="">
+			</div>
+			<div class="new-password">
+				新密码：
+				<input type="password">
+			</div>
+			<div class="besure-password">
+				确认密码：
+				<input type="password">
+			</div>
+		</div>
+	</div>
+	<div class="set-footer clearfix padding_20">
+		<span class="cancel">取消</span>
+		<span class="besure">确定</span>
+	</div>
+</div>

@@ -1,0 +1,79 @@
+.tab1 .outpatient-box{
+	border-top:none;
+}
+.conditionofapatient-info,.apply-box,.diagnose-result,.prescription-box{
+	margin-top: 20px;
+}
+.diagnose-result .information-wrap>div{
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.conditionofapatient-info .information-wrap>div{
+	float: left;
+	width: 50%;
+	min-height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.conditionofapatient-info .information-wrap input,.listBox .apply-wrap .equipment-type select,.listBox .apply-wrap .medical-advice select,.listBox .apply-wrap .check-object select,.addPrescription .prescription-info>div input,.addPrescription .prescription-info>div select{
+	width: 100%;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.conditionofapatient-info .information-wrap input:focus,.listBox .apply-wrap .equipment-type select:focus,.listBox .apply-wrap .medical-advice select:focus,.listBox .apply-wrap .check-object select:focus,.addPrescription .prescription-info>div input:focus,.addPrescription .prescription-info>div select:focus{
+	border-color: #BAE8DE;
+}
+.apply-box>div{
+	float: left;
+	width: 50%;
+}
+.apply-box .apply-header a,.prescription-box .prescription-header a{
+	color: #a1a1a1;
+    float: right;
+    font-size: 14px;
+    display: none;
+}
+.apply-box table,.prescription-box table{
+	margin-top: 20px;
+}
+.outpatient-box .outcall-state,.prescription-box thead .operate{
+	display: none;
+}
+.button-box .button:not(.back){
+	display: none;
+}
+.listBox .patient-info>div{
+	float: left;
+	margin-right: 20px;
+}
+.listBox .medical-info>div{
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.listBox .apply-wrap .equipment-type,.listBox .apply-wrap .medical-advice,.listBox .apply-wrap .check-object,.addPrescription .prescription-info>div:not(w100){
+	float: left;
+	width: 50%;
+	min-height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+@media screen and (max-width: 1366px) {
+	.conditionofapatient-info,.apply-box,.diagnose-result,.prescription-box,.apply-box table,.prescription table{
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+	<link rel="shortcut icon" href="/mtcStatis/images/logo.png">
+	<link href="/mtcStatis/common/bootstrap/css/bootstrap.min.css" title="" rel="stylesheet">
+	<link href="/mtcStatis/css/public.css" title="" rel="stylesheet">
+	<!-- <link title="" href="/mtcStatis/css/style.css" rel="stylesheet" type="text/css"> -->
+	<link title="" href="/mtcStatis/css/common.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/mtcStatis/css/ico/iconfont.css">
+	<link rel="stylesheet" href="/mtcStatis/css/statis/hospitalStatis.css">
+	<script src="/mtcStatis/common/js/jquery-3.2.1.min.js"></script>
+	<script src="/mtcStatis/common/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<input type="hidden" id='parentHref' data-index='28'>
+	<div class="down-main">
+		<div class="right-product my-index right-full">
+			<div class="container-fluid">
+				<div class="info-center">
+					<div class="right">
+						<!--面包屑导航-->
+						<div class="breadcrumb">
+							<a href="javascript:;">综合管理</a><em>/</em>
+							<span>医院信息统计</span> 
+						</div>
+					</div>
+					<div class="tab">
+						<div class="hospital-join border_box padding_20 clearfix">
+							<div class="join-day">
+								本医院已加入平台 <span></span> 天
+							</div>
+							<div class="now-date"></div>
+						</div>
+						<div class="statis-total">
+							<div class="register-total clearfix">
+								<div class="department-total border_box clearfix">
+									<div class="department-icon info-icon"></div>
+									<div class="total-info">
+										<p class="info-title">累计注册科室（个）</p>
+				        				<p class="total-num"></p>
+									</div>
+								</div>
+								<div class="room-total border_box clearfix">
+									<div class="room-icon info-icon"></div>
+									<div class="total-info">
+										<p class="info-title">累计注册诊室（个）</p>
+				        				<p class="total-num"></p>
+									</div>
+								</div>
+								<div class="doctor-total border_box clearfix">
+									<div class="doctor-icon info-icon"></div>
+									<div class="total-info">
+										<p class="info-title">累计注册医生（个）</p>
+				        				<p class="total-num"></p>
+									</div>
+								</div>
+							</div>
+							<div class="apply-total clearfix">
+								<div class="transfer-apply-total border_box">
+									<div class="total-info padding_20">
+										<span class="info-title">转诊申请总数（人）</span>
+										<span class="total-num"></span>
+									</div>
+									<div class="item-box clearfix">
+										<div class="total-item uptransfer">
+											<p class="item-title">上转转出患者</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item downtransfer">
+											<p class="item-title">下转转出患者</p>
+											<p class="item-num"></p>
+										</div>
+									</div>
+								</div>
+								<div class="consul-apply-total border_box">
+									<div class="total-info padding_20">
+										<span class="info-title">会诊申请总数（人）</span>
+										<span class="total-num"></span>
+									</div>
+									<div class="item-box clearfix">
+										<div class="total-item clinical-apply">
+											<p class="item-title">临床申请</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item screenage-apply">
+											<p class="item-title">影响申请</p>
+											<p class="item-num"></p>
+										</div>
+									</div>
+								</div>
+								<div class="outpatient-registration-total border_box">
+									<div class="total-info padding_20">
+										<span class="info-title">门诊挂号总数（人）</span>
+										<span class="total-num"></span>
+									</div>
+									<div class="item-box clearfix">
+										<div class="total-item simple-outpatient">
+											<p class="item-title">便民门诊</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item common-outpatient">
+											<p class="item-title">普通门诊</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item expert-outpatient">
+											<p class="item-title">专家门诊</p>
+											<p class="item-num"></p>
+										</div>
+									</div>
+								</div>
+								<div class="transfer-reception-total border_box">
+									<div class="total-info padding_20">
+										<span class="info-title">转诊接诊总数（人）</span>
+										<span class="total-num"></span>
+									</div>
+									<div class="item-box clearfix">
+										<div class="total-item uptransfer">
+											<p class="item-title">上转接诊患者</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item downtransfer">
+											<p class="item-title">下转接诊患者</p>
+											<p class="item-num"></p>
+										</div>
+									</div>
+								</div>
+								<div class="consul-reception-total border_box border_box">
+									<div class="total-info padding_20">
+										<span class="info-title">会诊接诊总数（人）</span>
+										<span class="total-num"></span>
+									</div>
+									<div class="item-box clearfix">
+										<div class="total-item clinical-apply">
+											<p class="item-title">临床申请</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item screenage-apply">
+											<p class="item-title">影像申请</p>
+											<p class="item-num"></p>
+										</div>
+									</div>
+								</div>
+								<div class="outpatient-reception-total border_box">
+									<div class="total-info padding_20">
+										<span class="info-title">门诊接诊总数（人）</span>
+										<span class="total-num"></span>
+									</div>
+									<div class="item-box clearfix">
+										<div class="total-item simple-outpatient">
+											<p class="item-title">便民门诊</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item common-outpatient">
+											<p class="item-title">普通门诊</p>
+											<p class="item-num"></p>
+										</div>
+										<div class="total-item expert-outpatient">
+											<p class="item-title">专家门诊</p>
+											<p class="item-num"></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="transfer-traffic clearfix">
+							<div class="transfer-echart padding_20 border_box">
+								<p class="border-left-green">双向转诊业务量</p>
+								<div id="transfer-echart" class="transfer-wrap"></div>
+							</div>
+							<div class="transfer-apply padding_20 border_box">
+								<p class="border-left-green">转诊申请业务量</p>
+								<ul id="transfer-apply" class='traffic-list'></ul>
+							</div>
+							<div class="transfer-reception padding_20 border_box">
+								<p class="border-left-green">转诊接诊业务量</p>
+								<ul id="transfer-reception" class='traffic-list'></ul>
+							</div>
+						</div>
+						<div class="hospital-traffic-wrap traffic-wrap clearfix">
+							<div class="hospital-apply-wrap border_box clearfix">
+								<div class="proportion-bar-wrap padding_20">
+									<p class="border-left-green">接诊病种业务量占比情况</p>
+									<div class='hospital-proportion-bar clearfix'>
+										<div id="apply-bar-left"></div>
+										<div id="apply-bar-right"></div>
+									</div>
+								</div>
+								<div class="proportion-pie-wrap padding_20">
+									<p class="border-left-green">申请医院业务量占比</p>
+									<div id="hospital-apply-pie" class="hospital-pie"></div>
+								</div>
+							</div>
+							<div class="hospital-reception-wrap border_box clearfix">
+								<div class="proportion-bar-wrap padding_20">
+									<p class="border-left-green">接诊病种业务量占比情况</p>
+									<div class='hospital-proportion-bar clearfix'>
+										<div id="reception-bar-left"></div>
+										<div id="reception-bar-right"></div>
+									</div>
+								</div>
+								<div class="proportion-pie-wrap padding_20">
+									<p class="border-left-green">申请医院业务量占比</p>
+									<div id="hospital-reception-pie" class="hospital-pie"></div>
+								</div>
+							</div>
+						</div>
+						<div class="consul-traffic clearfix">
+							<div class="consul-echart padding_20 border_box">
+								<p class="border-left-green">远程会诊业务量</p>
+								<div id="consul-echart" class="consul-wrap"></div>
+							</div>
+							<div class="consul-apply padding_20 border_box">
+								<p class="border-left-green">会诊申请业务量</p>
+								<ul id="consul-apply" class='traffic-list'></ul>
+							</div>
+							<div class="consul-reception padding_20 border_box">
+								<p class="border-left-green">会诊接诊业务量</p>
+								<ul id="consul-reception" class='traffic-list'></ul>
+							</div>
+						</div>
+						<div class="traffic-echart-wrap border_box clearfix">
+							<div class="hospital-apply-echart padding_20 width_16">
+								<p class="border-left-green">申请医院业务量占比</p>
+								<div id="hospital-apply-echart" class="echart-wrap"></div>
+							</div>
+							<div class="department-apply-echart padding_20 width_26">
+								<p class="border-left-green">申请科室业务量占比</p>
+								<div id="department-apply-echart" class="echart-wrap"></div>
+							</div>
+							<div class="consul-pattern-echart padding_20 width_16">
+								<p class="border-left-green">会诊模式业务量占比</p>
+								<div id="consul-pattern-echart" class="echart-wrap"></div>
+							</div>
+							<div class="hospital-reception-echart padding_20 width_16">
+								<p class="border-left-green">接诊医院业务量占比</p>
+								<div id="hospital-reception-echart" class="echart-wrap"></div>
+							</div>
+							<div class="department-reception-echart padding_20 width_26">
+								<p class="border-left-green">接诊科室业务量占比</p>
+								<div id="department-reception-echart" class="echart-wrap"></div>
+							</div>
+						</div>
+						<div class="outpatient-echart-wrap clearfix">
+							<div class="outpatient-traffic padding_20 border_box">
+								<p class="border-left-green">远程门诊业务量</p>
+								<div id="outpatient-traffic" class="outpatient-wrap"></div>
+							</div>
+							<div class="outpatient-hospital-traffic-wrap clearfix border_box">
+								<div class="outpatient-hospital-apply padding_20">
+									<p class="border-left-green">申请医院业务量占比</p>
+									<div id="outpatient-hospital-apply" class="outpatient-wrap"></div>
+								</div>
+								<div class="outpatient-hospital-reception padding_20">
+									<p class="border-left-green">接诊医院业务量占比</p>
+									<div id="outpatient-hospital-reception" class="outpatient-wrap"></div>
+								</div>
+								<div class="outpatient-type-echart padding_20">
+									<p class="border-left-green">门诊类型业务量占比</p>
+									<div id="outpatient-type-echart" class="outpatient-wrap"></div>
+								</div>
+							</div>
+						</div>
+						<div class="footer clearfix">
+							<div class="star border_box padding_20">
+		        				<p class='border-left-green'>便民门诊明星</p>
+		        				<div class="star_content clearfix">
+		        					<img src="/mtcStatis/images/9.png" class="pull-left">
+		        					<div class="pull-left">
+		        						<p class="doctor_star" id="simple_top_doc"></p>
+		        						<p class="gray_color" id="simple_top_hosp"></p>
+		        						<p class="gray_color"><span id="simple_top_count"></span></p>
+		        					</div>
+		        				</div>
+		        			</div>
+		        			<div class="star border_box padding_20">
+		        				<p class='border-left-green'>普通门诊明星</p>
+		        				<div class="star_content clearfix">
+		        					<img src="/mtcStatis/images/9.png" class="pull-left">
+		        					<div class="pull-left">
+		        						<p class="doctor_star" id="common_top_doc"></p>
+		        						<p class="gray_color" id="common_top_hosp"></p>
+		        						<p class="gray_color"><span id="common_top_count"></span></p>
+		        					</div>
+		        				</div>
+		        			</div>
+		        			<div class="star border_box padding_20">
+		        				<p class='border-left-green'>专家门诊明星</p>
+		        				<div class="star_content clearfix">
+		        					<img src="/mtcStatis/images/9.png" class="pull-left">
+		        					<div class="pull-left">
+		        						<p class="doctor_star" id="expert_top_doc"></p>
+		        						<p class="gray_color" id="expert_top_hosp"></p>
+		        						<p class="gray_color"><span id="expert_top_count"></span></p>
+		        					</div>
+		        				</div>
+		        			</div>
+						</div>
+					</div>
+			    </div>
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript" src="/mtcStatis/common/js/echarts.min.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/common.js"></script>
+	<script type="text/javascript" src="/mtcStatis/js/statis/hospitalStatis.js"></script>
+</body>
+</html>

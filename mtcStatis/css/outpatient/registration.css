@@ -1,0 +1,98 @@
+.flow-process>div{
+	float: left;
+	width: 114px;
+	height: 32px;
+	line-height: 32px;
+	color: #fff;
+	text-align: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.flow-process .flow-registration{
+	background-image: url('/mtcStatis/images/21.png');
+}
+.flow-process .flow-upload,.flow-process .flow-pay{
+	background-image: url('/mtcStatis/images/23.png');
+}
+.flow-process .flow-upload.pass,.flow-process .flow-pay.pass{
+	background-image: url('/mtcStatis/images/24.png');
+}
+.patient-box,.scheduling-box,.scheduling-box table{
+	margin-top: 20px;
+}
+.patient-box>div{
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+	margin: 10px 0;
+}
+.patient-box>div input[type="text"],.patient-box>div select{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	padding: 0 10px;
+}
+.patient-box>div input[type="text"]:focus,.patient-box>div select:focus{
+	border-color: #BAE8DE;
+}
+.left-right span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-size: 100%;
+	position: absolute;
+	top: 3px;
+	cursor: not-allowed;
+}
+.left-right span.hasmore{
+	cursor: pointer;
+}
+.left-button{
+	left: 0;
+	background-image: url('/mtcStatis/images/4.2.png');
+}
+.left-button.hasmore{
+	background-image: url('/mtcStatis/images/4.1.png');
+}
+.right-button{
+	right: 0;
+	background-image: url('/mtcStatis/images/4.4.png');
+}
+.right-button.hasmore{
+	background-image: url('/mtcStatis/images/4.3.png');
+}
+.scheduling-box .change-week>span.before-next{
+	cursor: not-allowed;
+	display: inline-block;
+	width: 10px;
+	height: 12px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.scheduling-box .change-week>span.before-next.hasweek{
+	cursor: pointer
+}
+.scheduling-box .change-week>span.before-week{
+	background-image: url('/mtcStatis/images/left.png');
+}
+.scheduling-box .change-week>span.before-week.hasweek{
+	background-image: url('/mtcStatis/images/left1.png');
+}
+.scheduling-box .change-week>span.next-week{
+	background-image: url('/mtcStatis/images/right1.png');
+}
+.scheduling-box .change-week>span.next-week{
+	background-image: url('/mtcStatis/images/right.png');
+}
+.scheduling-box .change-week>span.current-week{
+	cursor: pointer;
+	margin: 0 10px;
+}
+@media screen and (max-width: 1366px) {
+	.patient-box,.scheduling-box,.scheduling-box table{
+		margin-top: 10px;
+	}
+}
